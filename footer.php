@@ -1,0 +1,99 @@
+    </article>
+    
+    <?php if ($PageTitle == "") { ?>
+    <div id="spiffs">
+      <article>
+        <a href="#" class="spiff spiff-left">
+          <div class="spiff-img"><img src="images/spiff-hover.png" alt=""></div>
+          <div class="spiff-sep"></div>
+          <h1>BLANCHARD GRINDING</h1>
+          <div class="spiff-text">
+            Sullivan Metals has a grinder to meet almost every need. Grinding is where we have made our name, expanding on our services to meet the diverse needs of our customers &amp; an ever-changing economy.
+          </div>
+          <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
+        </a>
+
+        <a href="#" class="spiff spiff-mid">
+          <div class="spiff-img"><img src="images/spiff-hover.png" alt=""></div>
+          <div class="spiff-sep"></div>
+          <h1>STRESS RELIEVING</h1>
+          <div class="spiff-text">
+            Thermal Stress Relieving is an annealing process that heats the metal below the austenite phase to reduce distortions or changes in dimensions that might occur after shaping.
+          </div>
+          <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
+        </a>
+
+        <a href="#" class="spiff spiff-mid2">
+          <div class="spiff-img"><img src="images/spiff-hover.png" alt=""></div>
+          <div class="spiff-sep"></div>
+          <h1>FLAME CUTTING</h1>
+          <div class="spiff-text">
+            Flame cutting will produce products that range from simple rectangles, circles, and rings, to intricate shapes custom-cut to specification.
+          </div>
+          <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
+        </a>
+
+        <a href="#" class="spiff spiff-right">
+          <div class="spiff-img"><img src="images/spiff-hover.png" alt=""></div>
+          <div class="spiff-sep"></div>
+          <h1>SHOT BLASTING</h1>
+          <div class="spiff-text">
+            Shot Blasting is the operation of cleaning or preparing a surface by forcibly propelling a stream of abrasive material against it under high pressure.
+          </div>
+          <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
+        </a>
+
+        <div style="clear: both;"></div>
+      </article>
+    </div>
+    <?php } ?>
+
+    <article id="callus">
+      CALL US: <span>800-943-9511</span>
+    </article>
+
+    <div id="footer1">
+      <footer>
+        <div id="location">
+          <img src="images/logo-footer.png" alt="" id="logo-footer"><br>
+          <div id="loc-left">
+            <strong>The Sullivan Corporation</strong><br>
+            460 Cardinal Lane<br>
+            Hartland, Wisconsin 53029
+          </div>
+          
+          <div id="loc-right">
+            <strong style="color: #72A536;">P:</strong> (262) 369-7200<br>
+            <strong style="color: #72A536;">F:</strong> (262) 369-7219<br>
+            <strong style="color: #72A536;">E:</strong> <?php email("info@thesullivancorp.com"); ?>
+          </div>
+
+          <div style="clear: both;"></div>
+        </div>
+
+        <div id="footer-menu">
+          <?php include "menu.php"; ?>
+        </div>
+
+        <div style="clear: both;"></div>
+      </footer>
+    </div>
+    
+    <div id="footer2">
+      <footer>
+        <div id="emailsignup">
+          <form method="POST" action="#">
+            <input type="text" name="email" placeholder="EMAIL SIGN UP"> <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+
+        <div id="copyright">
+          &copy; <?php echo date("Y"); ?> All rights reserved, Sullivan Corporation. Site by <a href="http://www.foresitegrp.com">Foresite Group</a>
+        </div>
+
+        <div style="clear: both;"></div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
