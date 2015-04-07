@@ -133,7 +133,8 @@ FOOTER {
   color: #6D6E71;
   font-family: 'questa_sansregular', Arial, Helvetica, sans-serif;
   font-size: 100%;
-  padding: 4px 7px;
+  height: 28px;
+  padding: 0 7px;
   margin: 0;
 }
 
@@ -146,7 +147,7 @@ FOOTER {
 #search BUTTON {
   border-left: 0;
   cursor: pointer;
-  line-height: 1.25em;
+  height: 30px;
 }
 
 #search BUTTON:hover {
