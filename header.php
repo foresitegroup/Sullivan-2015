@@ -29,10 +29,15 @@ function email($address, $name="") {
     <script type="text/javascript" src="inc/jquery.cycle2.min.js"></script>
     <link rel="stylesheet" href="inc/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <script type="text/javascript" src="inc/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $("a[href^='http'], a[href$='.pdf']").not("[href*='" + window.location.host + "']").attr('target','_blank');
         $(".fancybox").fancybox();
+        $("#datepicker1").datepicker();
+        $("#datepicker2").datepicker();
+        $("#datepicker3").datepicker();
       });
     </script>
     
@@ -52,7 +57,7 @@ function email($address, $name="") {
         <a href="."><img src="images/logo.png" alt="KM Tooling" id="logo"></a>
 
         <div id="topmenu">
-          <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="#">RFQ</a> | <a href="#">SALES ENGINEER</a> | <a href="#">CONTACT</a>
+          <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="rfq.php">RFQ</a> | <a href="sales.php">SALES ENGINEER</a> | <a href="contact.php">CONTACT</a>
         </div>
 
         <form id="search" method="POST" action="search.php">

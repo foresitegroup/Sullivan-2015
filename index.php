@@ -32,7 +32,7 @@ include "header.php";
   <br>
   <br>
 
-  <a href="#" class="raq home">REQUEST A QUOTE</a>
+  <a href="rfq.php" class="raq home">REQUEST A QUOTE</a>
 </div>
 
 <div style="clear: both;"></div>

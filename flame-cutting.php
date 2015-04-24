@@ -6,7 +6,7 @@ $ServicesMenu = "yes";
 include "header.php";
 ?>
 
-<h3>FLAME CUTTING</h3>
+<h3>FLAME CUTTING SERVICES</h3>
 
 <img src="images/flame-cutting1.jpg" alt="" class="right">
 
@@ -27,21 +27,20 @@ Flame Cutting will produce products that range from simple rectangles, circles, 
 Both oxy-fuel and plasma arc cutting utilize computer numerically controlled (CNC) systems for the highest degree of accuracy. If necessary, we can manually program machines using your blueprints or drawings; but direct file transfer via DXF enables us to bypass that step, which ensures greater accuracy in programming and reduces turnaround time for virtually every job.<br>
 <br>
 
-<hr class="fancy">
+<strong>Flame Cutting Capacities</strong><br>
+<ul>
+  <li>CNC Oxy-Fuel Cutting  Bed size 100" x 300"</li>
+  <li>CNC Plasma Arc Cutting  Bed size 100" x 300"</li>
+</ul>
+
+<hr class="fancy fancy-em">
+
+<span class="raq">To <strong>Request a Quote</strong> follow the link below and fill in the appropriate fields and one of our skilled Sullivan sales engineer will contact you regarding your manufacturing needs.</span><br>
 <br>
 
-To Request a Quote follow the link below and fill in the appropriate fields and one of our skilled Sullivan sales engineer will contact you regarding your manufacturing needs.<br>
-<br>
-<br>
+<a href="rfq.php" class="raq">REQUEST A QUOTE</a>
 
-<a href="#" class="raq">REQUEST A QUOTE</a><br>
-<br>
-<br>
-<br>
-
-<hr class="fancy">
-<br>
-<br>
+<hr class="fancy fancy-em">
 
 <a class="fancybox" rel="group" href="images/flame-cutting-gall1.jpg" style="background: url(images/flame-cutting-gall1.jpg);"><img src="images/gallery-hover.png" alt=""></a>
 <a class="fancybox" rel="group" href="images/flame-cutting-gall2.jpg" style="background: url(images/flame-cutting-gall2.jpg);"><img src="images/gallery-hover.png" alt=""></a>
