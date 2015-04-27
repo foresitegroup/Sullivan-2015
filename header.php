@@ -60,8 +60,10 @@ function email($address, $name="") {
           <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="rfq.php">RFQ</a> | <a href="sales.php">SALES ENGINEER</a> | <a href="contact.php">CONTACT</a>
         </div>
 
-        <form id="search" method="POST" action="search.php">
-          <input type="text" name="q" placeholder="SEARCH"><button type="submit"><i class="fa fa-search"></i></button>
+        <form class="search" method="POST" action="search.php">
+          <div>
+            <input type="text" name="search" placeholder="SEARCH"><button type="submit"><i class="fa fa-search"></i></button>
+          </div>
         </form>
       </header>
     </div>

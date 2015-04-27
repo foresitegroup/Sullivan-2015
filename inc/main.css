@@ -133,13 +133,13 @@ FOOTER {
   font-size: 117%;
 }
 
-#search {
+.search {
   margin-top: 2.57em;
   text-align: right;
 }
 
-#search INPUT,
-#search BUTTON {
+.search INPUT,
+.search BUTTON {
   border: 1px solid #E0E0E0;
   background: #EBEBEB;
   color: #6D6E71;
@@ -150,20 +150,25 @@ FOOTER {
   margin: 0;
 }
 
-#search INPUT {
+.search INPUT {
   border-right: 0;
   width: 20%;
   outline: none;
 }
 
-#search BUTTON {
+.search BUTTON {
   border-left: 0;
   cursor: pointer;
   height: 30px;
 }
 
-#search BUTTON:hover {
+.search BUTTON:hover {
   color: #000000;
+}
+
+.searchpage {
+  margin-top: 0;
+  text-align: center;
 }
 
 INPUT::-webkit-input-placeholder { text-align: right; color: #6D6E71; }
