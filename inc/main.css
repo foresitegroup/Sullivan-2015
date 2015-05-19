@@ -1008,7 +1008,7 @@ A.raq.home {
     margin: 3.2em auto;
   }
 
-  #search INPUT {
+  .search INPUT {
     width: 26%;
   }
 
@@ -1123,7 +1123,7 @@ A.raq.home {
 
 @media only screen and (max-width: 768px) {
   /* Tablet */
-  #search INPUT {
+  .search INPUT {
     width: 28%;
   }
 
@@ -1175,14 +1175,16 @@ A.raq.home {
   #menu {
     position: absolute;
     top: 0;
-    right: 0;
+    /*right: 0;*/
+    left: 48%;
     background: transparent;
     box-shadow: 0;
+    width: 52%;
   }
 
-  #menu .fa {
+  /*#menu .fa {
     display: none;
-  }
+  }*/
 
   #menu UL {
     position: relative;
@@ -1195,7 +1197,7 @@ A.raq.home {
   #menu UL LI:hover UL,
   #menu UL LI:hover UL LI UL,
   #menu UL LI:hover UL LI:hover UL {
-    display: block;
+    /*display: block;*/
     position: static;
     top: 0;
     left: 0;
@@ -1238,7 +1240,8 @@ A.raq.home {
   }
   
   #menu UL LI UL LI {
-    padding-left: 1em;
+    /*padding-left: 1em;*/
+    padding: 0 1em;
   }
 
   #menu UL LI UL LI A:link,
@@ -1395,19 +1398,24 @@ A.raq.home {
     margin-right: 1em;
   }
 
-  #search {
+  .search {
     margin: 2em 0;
     float: right;
     width: 75%;
   }
 
-  #search INPUT {
+  .search INPUT {
     width: 75%;
   }
 
   #menu-toggle {
     top: 3.9em;
     left: 4%;
+  }
+
+  #menu {
+    left: 10%;
+    width: 90%;
   }
 
   .cycle-slideshow DIV DIV {
