@@ -57,7 +57,7 @@ function email($address, $name="") {
         <a href="."><img src="images/logo.png" alt="KM Tooling" id="logo"></a>
 
         <div id="topmenu">
-          <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="rfq.php">RFQ</a> | <a href="sales.php">SALES ENGINEER</a> | <a href="contact.php">CONTACT</a>
+          <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="rfq.php">RFQ</a> | <a href="contact.php">SALES ENGINEER</a> | <a href="contact.php">CONTACT</a>
         </div>
 
         <form class="search" method="POST" action="search.php">
