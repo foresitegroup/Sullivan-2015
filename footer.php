@@ -48,6 +48,10 @@
     </div>
     <?php } ?>
 
+    <?php if ($Map != "") { ?>
+    <div id="map-canvas"></div>
+    <?php } ?>
+
     <article id="callus">
       CALL US: <span>800-943-9511</span>
     </article>

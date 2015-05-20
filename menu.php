@@ -32,10 +32,8 @@
   <li>
     <a href="contact.php">Contact <i class="fa fa-angle-double-down"></i></a>
     <ul>
-      <li><a href="sales.php">Sales</a></li>
       <li><a href="rmi.php">RMI</a></li>
       <li><a href="rfq.php">RFQ</a></li>
-      <li><a href="location.php">Location</a></li>
     </ul>
   </li>
 </ul>

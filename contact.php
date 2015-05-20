@@ -10,7 +10,44 @@ $timestamp = time();
 $salt = "ForesiteGroupSullivan";
 ?>
 
-<h3>CONTACT US</h3>
+<h3>SALES CONTACT</h3>
+
+<div class="half-left">
+  With over 400 years of combined craftsman experience we know how to get your metal processing completed precisely, on time - while saving you money.<br>
+  <br>
+
+  As a customer your point of contact is a member of the Sullivan Sales Engineering Team. Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.<br>
+  <br>
+
+  Your Sales Engineer is available to provide quotations, product availability, and technical assistance for your project.<br>
+  <br>
+
+  Call us at <strong>262-369-7200</strong> or Toll Free <strong>800-943-9511</strong>.
+</div>
+
+<div class="half-right">
+  <strong>Gerry Bohn</strong> - Manager of Sales<br>
+  Phone 262-369-7200<br>
+  Toll Free 800-943-9511<br>
+  Email <?php email("gbohn@thesullivancorp.com"); ?><br>
+  <br>
+
+  <strong>Ed Rauter</strong><br>
+  Phone 262-369-7200<br>
+  Toll Free 800-943-9511<br>
+  Email <?php email("erauter@thesullivancorp.com"); ?><br>
+  <br>
+  
+  <strong>Sullivan Corporation</strong><br>
+  460 Cardinal Lane<br>
+  Hartland, Wisconsin 53029<br>
+</div>
+
+<div style="clear: both;"></div>
+
+<hr class="fancy fancy-em">
+
+<h3>GENERAL INQUIRY</h3>
 
 <div class="half-left">
   <?php
@@ -102,15 +139,91 @@ $salt = "ForesiteGroupSullivan";
 </div>
 
 <div class="half-right">
+  <h4>MAILING</h4>
   <strong>Sullivan Corporation</strong><br>
   460 Cardinal Lane<br>
   Hartland, Wisconsin 53029<br>
   <br>
 
   Phone 262-369-7200<br>
-  Fax 262-369-7219
+  Fax 262-369-7219<br>
+  <br>
+  <br>
+
+  <h4>HEADQUARTERS/DOCK/DELIVERY<br>HARTLAND, WI</h4>
+  <strong>Sullivan Corporation</strong><br>
+  460 Cardinal Lane<br>
+  Hartland, Wisconsin 53029<br>
+  <br>
+  <br>
+
+  <h4>DOCK/DELIVERY<br>PORT OF MILWAUKEE, WI</h4>
+  <strong>Sullivan Corporation</strong><br>
+  2050 S Aldrich St<br>
+  Milwaukee, Wisconsin 53204
 </div>
 
 <div style="clear: both;"></div>
 
-<?php include "footer.php"; ?>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  function ViewLargerMap(VLMa, map) {
+    var VLMui = document.createElement('a');
+    VLMui.style.cursor = 'pointer';
+    VLMui.href = 'https://www.google.com/maps/place/Sullivan+Corporation/@43.095001,-88.351621,15z/data=!4m2!3m1!1s0x0:0x93bc25b7070c5738?hl=en-US';
+    VLMui.target = 'new';
+    VLMui.innerHTML = 'View larger map';
+    VLMui.style.marginLeft = '7px';
+    VLMa.appendChild(VLMui);
+  }
+
+  function initialize() {
+    var MyLatLng = new google.maps.LatLng(43.095001,-88.351621);
+    var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+      center: MyLatLng,
+      zoom: 16,
+      disableDefaultUI: true,
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL,
+        position: google.maps.ControlPosition.RIGHT_BOTTOM
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+    var map = new google.maps.Map(mapCanvas, mapOptions)
+    map.set('styles', [
+      {
+        stylers: [
+          //{ hue: '#1B75BB' },
+          { "saturation": -100 },
+          { "visibility": "simplified" }
+        ]
+      }
+    ]);
+    
+    var marker = new google.maps.Marker({
+      position: MyLatLng,
+      map: map,
+      icon: 'images/map-pin.png'
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      content: '<div id="content"><div id="bodyContent"><strong>Sullivan Corporation</strong><br>460 Cardinal Ln<br>Hartland, WI 53029<br><a href="https://www.google.com/maps/place/Sullivan+Corporation/@43.095001,-88.351621,15z/data=!4m2!3m1!1s0x0:0x93bc25b7070c5738?hl=en-US" target="new">View larger map</a></div></div>'
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+    
+    var vlmDiv = document.createElement('div');
+    var vlm = new ViewLargerMap(vlmDiv, map);
+    vlmDiv.index = 1;
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(vlmDiv);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<?php $Map = "yes"; include "footer.php"; ?>

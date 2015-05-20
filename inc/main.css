@@ -971,13 +971,21 @@ A.raq.home {
   margin-right: 8%;
 }
 
+#map-canvas {
+  width: 100%;
+  height: 290px;
+}
+.gm-style img { max-width: none; }
+.gm-style label { width: auto; display: inline; }
+
 .embed {
   position: relative;
   padding-bottom: 100%; /* This is the aspect ratio */
   height: 0;
   overflow: hidden;
 }
-.embed iframe {
+.embed iframe,
+.embed #map-canvas {
   position: absolute;
   top: 0;
   left: 0;
