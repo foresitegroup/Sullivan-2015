@@ -606,7 +606,7 @@ A.spiff:hover .readmore, A.spiff:active .readmore {
 
 #footer-menu UL LI {
   float: left;
-  margin-left: 5em;
+  margin-left: 4.4em;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 0.3em;
@@ -1078,7 +1078,7 @@ A.raq.home {
   }
 
   #footer-menu UL LI {
-    margin-left: 4em;
+    margin-left: 2.5em;
   }
 
   #footer-menu UL LI:nth-child(1) {
@@ -1093,12 +1093,12 @@ A.raq.home {
 
   #footer-menu UL LI:nth-child(5) {
     top: 0;
-    left: 18.5%;
+    left: 18.4%;
   }
 
   #footer-menu UL LI:nth-child(6) {
     top: 0;
-    left: 51%;
+    left: 49.3%;
   }
 
   #footer-menu UL LI UL LI:nth-child(1) {
@@ -1325,7 +1325,7 @@ A.raq.home {
   }
 
   #footer-menu UL LI:nth-child(6) {
-    left: 49.5%;
+    left: 51.5%;
   }
 
   #emailsignup,

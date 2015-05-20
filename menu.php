@@ -14,8 +14,8 @@
   <li>
     <a href="our-company.php">Our Company <i class="fa fa-angle-double-down"></i></a>
     <ul>
-      <li><a href="profile.php">Profile</a></li>
-      <li><a href="mission-and-strategy.php">Mission &amp; Strategy</a></li>
+      <li><a href="our-company.php#profile">Profile</a></li>
+      <li><a href="our-company.php#mission-and-strategy">Mission &amp; Strategy</a></li>
       <li><a href="certifications-and-awards.php">Certifications &amp; Awards</a></li>
       <li><a href="iso.php">ISO</a></li>
     </ul>
@@ -23,8 +23,8 @@
   <li>
     <a href="facilities.php">Facilities <i class="fa fa-angle-double-down"></i></a>
     <ul>
-      <li><a href="equipment-list.php">Equipment List</a></li>
-      <li><a href="industries-served.php">Industries Served</a></li>
+      <li><a href="facilities.php#equipment-list">Equipment List</a></li>
+      <li><a href="facilities.php#industries-served">Industries Served</a></li>
     </ul>
   </li>
   <li><a href="gallery.php">Gallery</a></li>
@@ -32,8 +32,8 @@
   <li>
     <a href="contact.php">Contact <i class="fa fa-angle-double-down"></i></a>
     <ul>
-      <li><a href="rmi.php">RMI</a></li>
-      <li><a href="rfq.php">RFQ</a></li>
+      <li><a href="rmi.php">Request More Info</a></li>
+      <li><a href="rfq.php">Request For Quote</a></li>
     </ul>
   </li>
 </ul>
