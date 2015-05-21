@@ -115,4 +115,4 @@ function email($address, $name="") {
     </div>
     <?php } ?>
 
-    <article>
+    <article<?php if ($FullWidth != "") echo " id=\"fullwidth\""; ?>>
