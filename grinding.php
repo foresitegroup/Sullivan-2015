@@ -6,52 +6,52 @@ $ServicesMenu = "yes";
 include "header.php";
 ?>
 
-<h3>GRINDING SERVICES</h3>
+<h3>BLANCHARD GRINDING</h3>
 
 <div class="half-left">
-  Sullivan Corporation has a grinder to meet almost every need. Grinding is where we have made our name and we continue to expand on our services to meet the diverse needs of our customers and an ever-changing economy.<br>
+  <strong>Largest Grinding Capabilities in the Midwest</strong><br>
   <br>
 
-  Blanchard Grinding, technically referred to as Rotary Surface Grinding, quickly removes stock from one side of a part. Abrasive stones are used to remove stock from the work-piece. Magnetic materials are held in place with an electromagnetic chuck. Dimensional tolerances of approximately 0.001" parallelism and flatness per foot of diagonal of part are achievable on Blanchard Grinders. Surface finish typically will run 63 micro-inch RMS and as high as 32 micro-inch RMS with certain material. Using significantly greater horsepower than other grinding methods, Blanchard Grinding removes large amounts of stock quickly and efficiently. Non-ferrous materials can also be ground, but require special work holding arrangements.<br>
+  The Sullivan Corporation has been serving the grinding industry for over 45 years.<br>
   <br>
 
-  Ideal for large parts such as rotary tables, side plates, weldments, fabrications, forgings and machine bases, Blanchard Grinding adds size versatility, improved surface conditions, eliminates mismatches, and speeds turnaround time on large parts when compared to milling. This method provides a considerable time savings over surface grinding as well.<br>
+  The most professional and experienced customer service and sales engineering team is available to provide quotations, product availability, and technical assistance for your projects.<br>
   <br>
 
-  Pre-machining costs and turnaround time can be reduced by simultaneously Blanchard Grinding multiple parts.<br>
+  With over 400 years of combine operator experience, all orders, whether they require a critical tolerance  or simply a surface clean-up. Are processed by our team of skilled craftsmen.<br>
   <br>
 
-  The Blanchard grinding process will leave its trademark cross-hatched surface finish pattern, typically within a 32 - 125 RMS range, though higher finishes are possible.<br>
+  High horsepower, large capacity Blanchard Grinding equipment is the backbone of our contract services.<br>
   <br>
 
-  <ul>
-    <li>Long or short runs.</li>
-    <li>Ferrous or non-ferrous metals, annealed or hardened up to 62 RC.</li>
-    <li>Flat, parallel, square and uniformity tolerances within 0.001 - 0.003 depending on size.</li>
-    <li>Dimensional tolerance frequently requested is &plusmn;0.002.</li>
-  </ul>
+  We have machine to handle many types of projects and part sizes, large or small and in any quantity.<br>
   <br>
 
-  <strong>Our Grinding capacities include:</strong>
-  <ul>
-    <li>Reform Bar Grinder</li>
-    <li>42" Blanchards</li>
-    <li>60" Blanchards</li>
-    <li>100" Blanchards</li>
-    <li>120" Blanchard grinders</li>
-    <li>224" Blanchard</li>
-  </ul>
+  We match our machine capabilities (ie: horse power and size) with your project, providing the most efficient stock removal for best value and total quality.<br>
   <br>
 
-  The Flagship of our rotary grinders is Sullivan's 224" Cross Corner Blanchard Grinder. This is the largest cross corner grinder in the nation.<br>
+  We are experienced with various types of material, including carbon steel, stainless steel, castings, die sets and fabrications.<br>
   <br>
 
-  <strong>Blanchard 200 Series</strong>
-  <ul>
-    <li>72" of vertical travel</li>
-    <li>224" cross corner swing</li>
-    <li>600 HP Spindle</li>
-  </ul>
+  We are committed to "Continuous Improvement" in all processes from order entry and grinding through delivery and invoicing.<br>
+  <br>
+
+  Our structured approach to value engineering and or problem solving provides timely solutions to your product and order needs.<br>
+  <br>
+
+  We operate three full shifts per day and have over 4000 hours of processing time available each month.<br>
+  <br>
+
+<strong>Our Blanchard Grinding Capacity Include:</strong><br>
+<ul>
+  <li>36" Blanchard Grinders: 75 HP, 12" Vertical</li>
+  <li>42" Blanchard Grinders: 150 HP, 30" Vertical</li>
+  <li>60" Blanchard Grinders: 200 HP, 30" Vertical</li>
+  <li>66" Blanchard Grinders: 200 HP, 36" Vertical</li>
+  <li>100" Blanchard Grinders: 300 HP, 48" Vertical</li>
+  <li>120" Blanchard Grinders: 350 HP, 50" Vertical</li>
+  <li>224" Blanchard Grinder: 600 HP, 72" Vertical &mdash; The Largest Blanchard Grinder in the Nation</li>
+</ul>
 
   <hr class="fancy fancy-em">
 

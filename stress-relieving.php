@@ -24,13 +24,16 @@ include "header.php";
   This is important when the parts will go on to be ground, machined, or fabricated. Without stress relieving, parts may develop bow or twist as they are further processed.<br>
   <br>
 
-  Stress relieving consists of heating the parts to a temperature just below the range at which the grain structure begins to change, usually 1100&deg; to 1200&deg;F. The parts are held at this temperature long enough to achieve a uniform temperature throughout. Then they are allowed to cool in the furnace. Generally, no grain transformation takes place in stress relieving.<br>
+  Stress relieving consists of heating the parts to a temperature just below the range at which the grain structure begins to change, usually 1100° to 1200°F. The parts are held at this temperature long enough to achieve a uniform temperature throughout. Then they are allowed to cool in the furnace. Generally, no grain transformation takes place in stress relieving.<br>
   <br>
 
-  <strong>Large Capacity Stress Relieving Oven</strong><br>
+  <strong>Our Large Capacity Stress Relieving Capacity Include:</strong><br>
   <ul>
-    <li>96' X 96" x 180"</li>
-    <li>High temp 2000&deg;F</li>
+    <li>106" Wide x 180" Long Oven</li>
+    <li>96" Wide x 120" Long Oven</li>
+    <li>High temperature - 2000&deg;F</li>
+    <li>Overnight Operation</li>
+    <li>Quick Turn-Around</li>
   </ul>
 
   <hr class="fancy fancy-em">

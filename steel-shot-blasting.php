@@ -1,26 +1,31 @@
 <?php
-$PageTitle = "Abrasive Blasting";
+$PageTitle = "Steel Shot Blasting";
 $Banner = "sub-banner-abrasive-blasting.jpg";
-$BannerText = "SERVICES / <strong>ABRASIVE BLASTING</strong>";
+$BannerText = "SERVICES / <strong>STEEL SHOT BLASTING</strong>";
 $ServicesMenu = "yes";
 include "header.php";
 ?>
 
-<h3>ABRASIVE BLASTING SERVICES</h3>
+<h3>STEEL SHOT BLASTING</h3>
 
 <img src="images/abrasive-blasting1.jpg" alt="" class="right">
 
-Abrasive blasting is the operation of cleaning or preparing a surface by forcibly propelling a stream of abrasive material against it under high pressure. Usually explained as the use of a material against another material to make it smoother, remove surface contaminants or to roughen a surface. There are several variants of the process, such as bead blasting, sandblasting, shot blasting.<br>
+Shot blasting is the operation of cleaning or preparing a surface by forcibly propelling a stream of abrasive material against it under high pressure. Usually explained as the use of a material against another material to make it smoother, remove surface contaminants or to roughen a surface.<br>
 <br>
 
-Shot blasting is also used for removing burrs, scale, and rust that may interfere with the part's integrity, appearance, or definition. Shot blasting can also prepare the surface of a part for coating by removing surface contaminants and provide a surface profile for increased coating adhesion.<br>
+At Sullivan we only use steel shot for blasting, it is used for removing burrs, scale, and rust that may interfere with the part's integrity, appearance, or definition without offering sand into the grain of the material.<br>
 <br>
 
-<strong>Abrasive Blasting Including:</strong><br>
+Steel Shot blasting also prepares the surface of a part for coating by removing surface contaminants and provide a surface profile for increased coating adhesion.<br>
+<br>
+
+<strong>Our Large Capacity Steel Shot Blasting Capacity Include:</strong><br>
 <ul>
-  <li>Bead blasting</li>
-  <li>Sandblasting</li>
-  <li>Shot blasting</li>
+  <li>12 Foot Wide X 25 Foot Long X 5 Foot High</li>
+  <li>Steel Shot Media</li>
+  <li>50 Ton Crane Capacity</li>
+  <li>Quick Turn-Around</li>
+  <li>Combine Stress Relieving with Blasting for Discount Pricing</li>
 </ul>
 
 <hr class="fancy fancy-em">

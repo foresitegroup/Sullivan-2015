@@ -77,28 +77,28 @@ function email($address, $name="") {
     <?php if ($PageTitle == "") { ?>
     <div class="cycle-slideshow" data-cycle-slides="> div" data-cycle-timeout="8000">
       <p class="cycle-pager"></p>
-      <div style="background: url(images/home-banner1.jpg) top center no-repeat;">
-        <div>
-          <h1>OVER 300 YEARS</h1>
-          Of combined craftsmanship. Metals processed to your exact specifications sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<br>
-          <br>
-          <a href="#">READ MORE</a>
-        </div>
-      </div>
-      <div style="background: url(images/home-banner2.jpg) top center no-repeat;">
-        <div>
-          <h1>REPLACE THIS IMAGE</h1>
-          Bacon ipsum dolor amet swine kevin beef fatback. Drumstick sausage kielbasa porchetta, leberkas brisket pork ham beef. Tri-tip doner short loin cupim short ribs.<br>
-          <br>
-          <a href="#">READ MORE</a>
-        </div>
-      </div>
       <div style="background: url(images/home-banner3.jpg) top center no-repeat;">
         <div>
-          <h1>CHANGE THIS IMAGE TOO</h1>
-          Meatball ground round cupim, rump bresaola fatback ball tip. Tongue fatback drumstick prosciutto boudin capicola salami jerky jowl sirloin rump bacon.<br>
+          <h1>OVER 300 YEARS</h1>
+          Of combined operator experience. All orders are processed by our team of skilled craftsmen.<br>
           <br>
-          <a href="#">READ MORE</a>
+          <a href="services.php">READ MORE</a>
+        </div>
+      </div>
+      <div style="background: url(images/home-banner1.jpg) top center no-repeat;">
+        <div>
+          <h1>LARGEST GRINDING CAPABILITIES IN THE MIDWEST</h1>
+          The Sullivan Corporation has been serving the grinding industry for over 45 years.<br>
+          <br>
+          <a href="grinding.php">READ MORE</a>
+        </div>
+      </div>
+      <div style="background: url(images/home-banner-request.jpg) top center no-repeat;">
+        <div>
+          <h1>REQUEST A QUOTE</h1>
+          With insight and engineering talent, our sales engineers are available to provide quotations, product availability and technical assistance for your project.<br>
+          <br>
+          <a href="contact.php">READ MORE</a>
         </div>
       </div>
     </div>

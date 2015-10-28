@@ -180,7 +180,7 @@ $salt = "ForesiteGroupSullivan";
       <input type="hidden" name="ip" value="<?php echo $ip; ?>">
       <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
 
-      <button type="submit" name="submit">SUBMIT</button>
+      <button type="submit" name="submit" style="display: block; margin: 0 auto;">SUBMIT</button>
     </div>
   </form>
   <?php } ?>

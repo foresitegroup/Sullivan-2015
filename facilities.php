@@ -8,19 +8,21 @@ include "header.php";
 
 <div class="darkwhite">
   <article>
-    <img src="images/facilities1.jpg" alt="" class="left">
+    <img src="images/facilities1.jpg" alt="" class="left" style="margin-top: 0.5em;">
 
     <h3>FACILITIES</h3>
 
-    The Sullivan Corporation operates two facilities in Southeast Wisconsin: a 24,000 square foot facility in Hartland WI, the main sales headquarters and grinding operation, and a 50,000 square foot facility in the Port of Milwaukee, where plate inventory, flame cutting, stress relieving and shot blasting operations are performed.<br>
+    The Sullivan Corporation operates two facilities in Southeast Wisconsin: a 35,000 square foot facility in Hartland WI, the main sales headquarters and grinding operation, and a 50,000 square foot facility in the Port of Milwaukee, where plate inventory, flame cutting, high definition plasma, stress relieving and shot blasting operations are performed.<br>
     <br>
 
     <strong>The company's primary services include:</strong><br>
     <ul style="display: inline-block;">
+      <li>Steel Plate</li>
       <li>Blanchard Grinding</li>
-      <li>Flame Cutting (Oxy-Fuel, Plasma Arc)</li>
+      <li>Flame Cutting</li>
+      <li>High Definition Plasma</li>
       <li>Thermal Stress Relieving</li>
-      <li>Abrasive Blasting</li>
+      <li>Steel Shot Blasting</li>
     </ul>
 
     <div style="clear: both;"></div>

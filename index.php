@@ -19,8 +19,6 @@ include "header.php";
     <li>FLAME-CUTTING</li>
     <li>STRESS RELIEVING</li>
     <li>SHOT BLASTING</li>
-    <li>WATER JET</li>
-    <li>MACHINING</li>
   </ul>
 </div>
 

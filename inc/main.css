@@ -373,7 +373,7 @@ NAV:before, NAV:after { content: ""; display: table; }
   font-size: 350%;
   line-height: 1em;
   text-shadow: none;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 .cycle-slideshow DIV DIV A:link,
@@ -1008,10 +1008,11 @@ ARTICLE#fullwidth {
   border: 0;
   background: #72A536;
   color: #FFFFFF;
+  font-size: 142%;
   font-weight: 400;
   padding: 0.7em 1.4em;
-  display: block;
-  margin: 0 auto;
+  /*display: block;
+  margin: 0 auto;*/
 }
 
 #contact BUTTON:hover {

@@ -6,9 +6,7 @@
       <li><a href="grinding.php">Grinding</a></li>
       <li><a href="flame-cutting.php">Flame Cutting</a></li>
       <li><a href="stress-relieving.php">Stress Relieving</a></li>
-      <li><a href="abrasive-blasting.php">Abrasive Blasting</a></li>
-      <li><a href="water-jet.php">Water Jet</a></li>
-      <li><a href="machining.php">Machining</a></li>
+      <li><a href="steel-shot-blasting.php">Steel Shot Blasting</a></li>
     </ul>
   </li>
   <li>

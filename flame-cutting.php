@@ -10,13 +10,19 @@ include "header.php";
 
 <img src="images/flame-cutting1.jpg" alt="" class="right">
 
-Flame Cutting will produce products that range from simple rectangles, circles, and rings, to intricate shapes custom-cut to specification.<br>
+Holding large inventory of steel plate from 1/2" thick to 8" Sullivan is well stocked to fulfill any job at hand. Our material is purchased directly from Major domestic steel suppliers and Mills.<br>
 <br>
 
-<strong>Oxy-Fuel Cutting</strong> - In oxy-fuel cutting, steel is cut by the chemical reaction between oxygen and the base metal at an elevated temperatvure. Multiple torches on a single machine can cut almost all grades of carbon and alloy steel plate. It will not work on stainless, aluminum, or nickel alloys because they lack enough carbon to burn. Oxy-fuel cutting is best utilized on heavy gauge plate.<br>
+Sullivan provides Oxy-Fuel cutting and High Definition Plasma cutting services.<br>
 <br>
 
-<strong>Plasma Arc Cutting</strong> - In plasma arc cutting, a column of electrically charged gas creates a high-energy arc, which melts the material being worked in a narrow path. Plasma arc is used to cut light thickness to medium thickness carbon steel, as well as stainless, nickel, alloys, and aluminum. Plasma arc machines utilize cutting heads, which move at a high rate of speed over a stationary plate or sheet. Plasma arc is much faster than oxy-fuel cutting, and does not induce as much stress to the metal being cut.<br>
+<strong>Oxy-Fuel Cutting</strong> is used to cut carbon plate from 1/2" through 8" thick.  It is a cost effective process that provides a good edge quality.<br>
+<br>
+
+<strong>High Definition Plasma</strong> is a relatively new cutting process that cuts materials with more speed and accuracy. It can process carbon steel materials, stainless and aluminum in thicknesses up to 2-1/2" thick.<br>
+<br>
+
+Sullivan's modern CNC flame cutting and High Definition Plasma equipment can cut plate sizes up to 120" X 480" with unsurpassed accuracy and quality.<br>
 <br>
 
 <img src="images/flame-cutting2.jpg" alt=""><br>
@@ -24,14 +30,7 @@ Flame Cutting will produce products that range from simple rectangles, circles, 
 
 <img src="images/flame-cutting3.jpg" alt="" class="right">
 
-Both oxy-fuel and plasma arc cutting utilize computer numerically controlled (CNC) systems for the highest degree of accuracy. If necessary, we can manually program machines using your blueprints or drawings; but direct file transfer via DXF enables us to bypass that step, which ensures greater accuracy in programming and reduces turnaround time for virtually every job.<br>
-<br>
-
-<strong>Flame Cutting Capacities</strong><br>
-<ul>
-  <li>CNC Oxy-Fuel Cutting  Bed size 100" x 300"</li>
-  <li>CNC Plasma Arc Cutting  Bed size 100" x 300"</li>
-</ul>
+Both oxy-fuel and plasma arc cutting utilize computer numerically controlled (CNC) systems for the highest degree of accuracy. If necessary, we can manually program machines using your blueprints or drawings; but direct file transfer via DXF enables us to bypass that step, which ensures greater accuracy in programming and reduces turnaround time for virtually every job.
 
 <hr class="fancy fancy-em">
 

@@ -9,24 +9,29 @@ include "header.php";
 <h3>SERVICES</h3>
 
 <div class="half-left">
-  The Sullivan Corporation is a metal service center that specializes in processing steel plate.  The Company has been in operation for more than 45 years and has a collective 400 years' worth of artisan experience.  The Sullivan Corporation matches client specifications using a variety of plate cutting services and technologies, and is capable of meeting a wide array of project requests, from different shapes, run sizes, and levels of complexity.  The Company also owns the world's largest Blanchard rotary surface grinder, providing the nation's largest grinding capacity. This machine has a 224" cross-corner capacity, 72" of vertical height, and a 600HP spindle.<br>
+  <strong>Forty-Five years of Plate Processing for the Metal Working Industry.</strong><br>
   <br>
 
-  The Sullivan Corporation operates two facilities in Southeast Wisconsin: a 24,000 square foot facility in Hartland WI, the main sales headquarters and grinding operation, and a 50,000 square foot facility in the Port of Milwaukee, where plate inventory, flame cutting, stress relieving and shot blasting operations are performed. The Company's services are listed below:<br>
+  The Sullivan Corporation is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.<br>
   <br>
 
-  <strong>Primary Services Include:</strong><br>
+  With over 400 years of collective Artisan experience in steel plate processing, you can rely on our ability to process simple to complex steel plate components to your exact specification.<br>
+  <br>
+
+  The Sullivan Corporation operates two facilities in Southeast Wisconsin: a 35,000 square foot facility in Hartland Wisconsin, the main sales headquarters and grinding operation and a 50,000 square foot facility in the Port of Milwaukee where plate inventory, flame-cutting, high definition plasma-cutting, stress relieving and steel shot blasting services are performed. From a single component to production volumes we can provide it all under one roof and under a single point of control.<br>
+  <br>
+
+  Our customer service-orientated work ethic combined with an experienced in-house sales engineering team will pay close attention to detail combined with our ISO based quality management system and Lean manufacturing methods ensures positive success.<br>
+  <br>
+
+  <strong>Sullivan's Primary Services Include:</strong><br>
   <ul>
-    <li>Blanchard Grinding </li>
-    <li>
-      Flame Cutting
-      <ul>
-        <li>Oxy-Fuel </li>
-        <li>Plasma Arc</li>
-      </ul>
-    </li>
+    <li>Steel Plate Inventory</li>
+    <li>Blanchard Grinding from 36" to 224" cross corner</li>
+    <li>Flame-cutting</li>
+    <li>High Definition Plasma Cutting</li>
     <li>Thermal Stress Relieving</li>
-    <li>Abrasive Blasting</li>
+    <li>Steel Shot Blasting</li>
   </ul>
 </div>
 
