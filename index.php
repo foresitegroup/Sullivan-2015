@@ -10,7 +10,7 @@ include "header.php";
   </span><br>
   <br>
 
-  <a href="#" class="readmore">READ MORE</a>
+  <a href="our-company.php" class="readmore">READ MORE</a>
 </div>
 
 <div class="one-third fancy-border-right">

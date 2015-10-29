@@ -12,8 +12,8 @@ function email($address, $name="") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>Sullivan Corporation<?php if ($PageTitle != "") echo " | " . $PageTitle; ?></title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $TopDir; ?>images/favicon.ico">
+    <link rel="apple-touch-icon" href="<?php echo $TopDir; ?>images/apple-touch-icon.png">
     
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -22,13 +22,13 @@ function email($address, $name="") {
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="inc/main.css">
+    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css">
     
-    <script type="text/javascript" src="inc/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="inc/bootstrap-collapse.js"></script>
-    <script type="text/javascript" src="inc/jquery.cycle2.min.js"></script>
-    <link rel="stylesheet" href="inc/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="inc/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/bootstrap-collapse.js"></script>
+    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery.cycle2.min.js"></script>
+    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript">
@@ -43,10 +43,10 @@ function email($address, $name="") {
     
     <!--[if lt IE 9]>
     <script src="inc/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <link rel="stylesheet" href="inc/main-ie8.css">
+    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main-ie8.css">
     <![endif]-->
     <!--[if lt IE 7 ]>
-    <script type="text/javascript" src="inc/dd_belatedpng.js"></script>
+    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/dd_belatedpng.js"></script>
     <script type="text/javascript">DD_belatedPNG.fix('img, .png');</script>
     <![endif]-->
   </head>
@@ -54,13 +54,13 @@ function email($address, $name="") {
     
     <div id="header-wrap">
       <header>
-        <a href="."><img src="images/logo.png" alt="KM Tooling" id="logo"></a>
+        <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png" alt="KM Tooling" id="logo"></a>
 
         <div id="topmenu">
-          <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="rfq.php">RFQ</a> | <a href="contact.php">SALES ENGINEER</a> | <a href="contact.php">CONTACT</a>
+          <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="<?php echo $TopDir; ?>rfq.php">RFQ</a> | <a href="<?php echo $TopDir; ?>contact.php">SALES ENGINEER</a> | <a href="<?php echo $TopDir; ?>contact.php">CONTACT</a>
         </div>
 
-        <form class="search" method="POST" action="search.php">
+        <form class="search" method="POST" action="<?php echo $TopDir; ?>search.php">
           <div>
             <input type="text" name="search" placeholder="SEARCH"><button type="submit"><i class="fa fa-search"></i></button>
           </div>
@@ -103,7 +103,7 @@ function email($address, $name="") {
       </div>
     </div>
     <?php } else { ?>
-    <div id="sub-banner"<?php if ($Banner != "") echo " style=\"background-image: url(images/" . $Banner . ");\""; ?>>
+    <div id="sub-banner"<?php if ($Banner != "") echo " style=\"background-image: url(<?php echo $TopDir; ?>images/" . $Banner . ");\""; ?>>
       <div>
         <?php echo $BannerText; ?>
       </div>

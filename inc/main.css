@@ -623,16 +623,22 @@ A.spiff:hover .readmore, A.spiff:active .readmore {
   display: none;
 }
 
+#footer-menu UL LI:first-child {
+  margin-left: 0;
+}
+
 #footer-menu UL LI:nth-child(5) {
   position: absolute;
   top: 1.6em;
   left: 0;
+  margin-left: 0;
 }
 
 #footer-menu UL LI:nth-child(6) {
   position: absolute;
   top: 3.2em;
   left: 0;
+  margin-left: 0;
 }
 
 #footer-menu UL LI UL {
@@ -689,6 +695,11 @@ A.spiff:hover .readmore, A.spiff:active .readmore {
   outline: none;
 }
 
+#emailsignup INPUT[style="submit"] {
+  width: auto;
+}
+
+#emailsignup .button,
 #emailsignup BUTTON {
   cursor: pointer;
   border: 0;
@@ -699,8 +710,10 @@ A.spiff:hover .readmore, A.spiff:active .readmore {
   font-weight: 400;
   padding: 6px 8px;
   margin-left: 0.7em;
+  width: auto;
 }
 
+#emailsignup .button:hover,
 #emailsignup BUTTON:hover {
   color: #72A536;
   background: #2D424D;
@@ -837,7 +850,7 @@ UL.home {
 }
 
 UL.home LI {
-  padding-bottom: 1em;
+  padding-bottom: 1.7em;
 }
 
 UL.home LI:last-child {
@@ -1043,6 +1056,15 @@ ARTICLE#fullwidth {
   height: 0;
   overflow: hidden;
 }
+
+.embed-16x9 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.embed-16x9 iframe,
 .embed iframe,
 .embed #map-canvas {
   position: absolute;
@@ -1059,6 +1081,40 @@ ARTICLE#fullwidth {
 .co-logo {
   vertical-align: middle;
   margin: 1em 1.8em;
+}
+
+.entry-header .posted-on .screen-reader-text,
+.entry-header .posted-on .updated,
+.entry-header .cat-links,
+.entry-header .tags-links,
+.entry-header .byline,
+.entry-footer .byline,
+.entry-footer .posted-on,
+.entry-footer .edit-link,
+.nav-previous .meta-nav,
+.nav-next .meta-nav {
+  display: none;
+}
+
+.entry-footer .cat-links,
+.entry-footer .tags-links {
+  display: block;
+  font-size: 80%;
+}
+
+.entry-header .posted-on,
+.entry-footer .cat-links .screen-reader-text,
+.entry-footer .tags-links .screen-reader-text {
+  font-weight: bold;
+}
+
+#primary #main IMG {
+  max-width: 100%;
+  height: auto;
+}
+
+.attachment-post-thumbnail {
+  margin-bottom: 1em;
 }
 
 
@@ -1194,6 +1250,11 @@ ARTICLE#fullwidth {
 
   .fancybox {
     width: 23.725%;
+  }
+
+  .entry-header,
+  .entry-footer {
+    width: 100%;
   }
 }
 
