@@ -10,20 +10,20 @@ function email($address, $name="") {
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
+
     <title>Sullivan Corporation<?php if ($PageTitle != "") echo " | " . $PageTitle; ?></title>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $TopDir; ?>images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo $TopDir; ?>images/apple-touch-icon.png">
-    
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+
+    <meta name="description" content="<?php echo ($Description != "") ? $Description : "The Sullivan Corporation is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications."; ?>">
+    <meta name="keywords" content="<?php echo ($Keywords != "") ? $Keywords : "grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing"; ?>">
     <meta name="author" content="Foresite Group">
-    
+
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css">
-    
+
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/bootstrap-collapse.js"></script>
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery.cycle2.min.js"></script>
@@ -40,7 +40,7 @@ function email($address, $name="") {
         $("#datepicker3").datepicker();
       });
     </script>
-    
+
     <!--[if lt IE 9]>
     <script src="inc/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main-ie8.css">
@@ -51,7 +51,7 @@ function email($address, $name="") {
     <![endif]-->
   </head>
   <body<?php if ($PageTitle == "") echo " style=\"background: url(images/background.jpg)\";"; ?>>
-    
+
     <div id="header-wrap">
       <header>
         <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png" alt="KM Tooling" id="logo"></a>
@@ -69,11 +69,11 @@ function email($address, $name="") {
     </div>
 
     <a id="menu-toggle" data-toggle="collapse" data-target="#menu" class="fa fa-bars"></a>
-    
+
     <nav id="menu" class="collapse">
       <?php include "menu.php"; ?>
     </nav>
-    
+
     <?php if ($PageTitle == "") { ?>
     <div class="cycle-slideshow" data-cycle-slides="> div" data-cycle-timeout="8000">
       <p class="cycle-pager"></p>

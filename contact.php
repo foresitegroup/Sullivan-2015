@@ -2,6 +2,8 @@
 $PageTitle = "Contact Us";
 $Banner = "sub-banner-sales.jpg";
 $BannerText = "CONTACT US";
+$Description = "Drop us a line! Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.";
+$Keywords = "contact Sullivan corp, contact Sullivan corporation, contact Sullivan metals, request a quote, request more information, grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing";
 include "header.php";
 
 // Settings for randomizing the field names
@@ -37,7 +39,7 @@ $salt = "ForesiteGroupSullivan";
   Toll Free 800-943-9511<br>
   Email <?php email("erauter@thesullivancorp.com"); ?><br>
   <br>
-  
+
   <strong>Sullivan Corporation</strong><br>
   460 Cardinal Lane<br>
   Hartland, Wisconsin 53029<br>
@@ -62,7 +64,7 @@ $salt = "ForesiteGroupSullivan";
       $Subject = "Comment From Sullivan Website";
       $From = "From: Contact Form <contactform@thesullivancorp.com>\r\n";
       $From .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
-      
+
       $Message = "Comment from " . $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . " (" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . ")";
 
       if (!empty($_POST[md5('company' . $_POST['ip'] . $salt . $_POST['timestamp'])])) $Message .= "\n" . $_POST[md5('company' . $_POST['ip'] . $salt . $_POST['timestamp'])];
@@ -72,14 +74,14 @@ $salt = "ForesiteGroupSullivan";
       if (!empty($_POST['contact'])) $Message .= "\nBest to contact me via " . $_POST['contact'];
 
       $Message .= "\n\n";
-      
+
       if (!empty($_POST[md5('comment' . $_POST['ip'] . $salt . $_POST['timestamp'])])) $Message .= $_POST[md5('comment' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-      
+
       $Message = stripslashes($Message);
-      
+
       mail($SendTo, $Subject, $Message, $From);
       //echo "<pre>$Message</pre><br><br>";
-      
+
       echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Metals.  You will be contacted shortly.";
     } else {
       echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
@@ -94,7 +96,7 @@ $salt = "ForesiteGroupSullivan";
       return true ;
     }
   </script>
-  
+
   Please fill in the fields below to be contacted. Required fields include *<br>
   <br>
 
@@ -119,7 +121,7 @@ $salt = "ForesiteGroupSullivan";
       <label for="comment">Comment</label>
       <textarea name="<?php echo md5("comment" . $ip . $salt . $timestamp); ?>" id="comment" placeholder="COMMENT"></textarea><br>
       <br>
-      
+
       <div class="radio">
         <strong>Best to contact me via</strong><br>
         <input type="radio" name="contact" value="Phone" id="phone-r"> <label for="phone-r">Phone</label>
@@ -128,7 +130,7 @@ $salt = "ForesiteGroupSullivan";
       <br>
 
       <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
-        
+
       <input type="hidden" name="ip" value="<?php echo $ip; ?>">
       <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
 
@@ -202,7 +204,7 @@ $salt = "ForesiteGroupSullivan";
         ]
       }
     ]);
-    
+
     var marker = new google.maps.Marker({
       position: MyLatLng,
       map: map,
@@ -216,7 +218,7 @@ $salt = "ForesiteGroupSullivan";
     google.maps.event.addListener(marker, 'click', function() {
       infowindow.open(map,marker);
     });
-    
+
     var vlmDiv = document.createElement('div');
     var vlm = new ViewLargerMap(vlmDiv, map);
     vlmDiv.index = 1;

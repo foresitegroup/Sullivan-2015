@@ -25,7 +25,7 @@ include "header.php";
 <div class="one-third last">
   <h2>QUOTE REQUEST</h2>
   <span class="home">
-    To Request a Quote follow the link below and fill in the appropriate fields and one of our skilled Sullivan sales engineer will contact you regarding your manufacturing needs. Other inquiries: <strong>800-943-9511</strong>
+    To Request a Quote follow the link below and fill in the appropriate fields and one of our skilled Sullivan sales engineers will contact you regarding your manufacturing needs. Other inquiries: <strong>800-943-9511</strong>
   </span><br>
   <br>
   <br>

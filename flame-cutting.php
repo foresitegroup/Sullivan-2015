@@ -3,6 +3,8 @@ $PageTitle = "Flame Cutting";
 $Banner = "sub-banner-flame-cutting.jpg";
 $BannerText = "SERVICES / <strong>FLAME CUTTING</strong>";
 $ServicesMenu = "yes";
+$Description = "The Sullivan Corporation is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.";
+$Keywords = "grinding, flame cutting, stress relieving, steel shot blasting, largest grinding capabilities in the Midwest, Blanchard grinding, oxy-fuel cutting, high definition plasma, CNC flame cutting, metal stress relieving, machining, shot blasting, metal shot blasting, Sullivan corporation, Sullivan corp, Sullivan metals";
 include "header.php";
 ?>
 
@@ -34,7 +36,7 @@ Both oxy-fuel and plasma arc cutting utilize computer numerically controlled (CN
 
 <hr class="fancy fancy-em">
 
-<span class="raq">To <strong>Request a Quote</strong> follow the link below and fill in the appropriate fields and one of our skilled Sullivan sales engineer will contact you regarding your manufacturing needs.</span><br>
+<span class="raq">To <strong>Request a Quote</strong> follow the link below and fill in the appropriate fields and one of our skilled Sullivan sales engineers will contact you regarding your manufacturing needs.</span><br>
 <br>
 
 <a href="rfq.php" class="raq">REQUEST A QUOTE</a>

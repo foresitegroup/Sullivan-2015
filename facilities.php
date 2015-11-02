@@ -3,6 +3,8 @@ $PageTitle = "Facilities";
 $Banner = "sub-banner-our-company.jpg";
 $BannerText = "FACILITIES";
 $FullWidth = "yes";
+$Description = "The Sullivan Corporation operates two facilities in Southeast Wisconsin: a 35,000 square foot facility in Hartland WI, the main sales headquarters and grinding operation, and a 50,000 square foot facility in the Port of Milwaukee.";
+$Keywords = "steel plate, Blanchard grinding, flame cutting, high definition plasma, thermal stress relieving, steel shot blasting, Sullivan corp, Sullivan metals, Sullivan corporation, abrasive blasting, reform bar grinder, 42&quot; blanchards, 100&quot; blanchards, 224&quot; Blanchard, 224&quot; cross corner swing, CNC plasma arc cutting, CNC oxy-fuel cutting, bead blasting, sandblasting, shot blasting, serving the paper industry, serving the marine and ship building industry, serving the oil and gas drilling industry";
 include "header.php";
 ?>
 
@@ -85,7 +87,7 @@ include "header.php";
     <h3 id="industries-served">INDUSTRIES SERVED</h3>
 
     Sullivan Corporation going strong for over 45 years has worked in many industries throughout the US and the world. Our services are and have been employed in such industries as:<br>
-    
+
     <div class="one-third-ul">
       <ul class="spaced">
         <li>Paper Industry</li>
@@ -94,7 +96,7 @@ include "header.php";
         <li>Agriculture Equipment Manufacturers</li>
       </ul>
     </div>
-    
+
     <div class="one-third-ul">
       <ul class="spaced">
         <li>Military and Defense</li>
@@ -103,7 +105,7 @@ include "header.php";
         <li>Oil and gas drilling</li>
       </ul>
     </div>
-    
+
     <div class="one-third-ul last">
       <ul class="spaced">
         <li>Marine and Ship Building</li>

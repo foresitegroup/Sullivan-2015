@@ -2,6 +2,8 @@
 $PageTitle = "Request More Information";
 $Banner = "sub-banner-sales.jpg";
 $BannerText = "CONTACT US / <strong>REQUEST MORE INFORMATION</strong>";
+$Description = "Drop us a line! Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.";
+$Keywords = "contact Sullivan corp, contact Sullivan corporation, contact Sullivan metals, request a quote, request more information, grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing";
 include "header.php";
 
 // Settings for randomizing the field names

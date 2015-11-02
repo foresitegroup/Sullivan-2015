@@ -3,6 +3,8 @@ $PageTitle = "Our Company";
 $Banner = "sub-banner-our-company.jpg";
 $BannerText = "OUR COMPANY";
 $FullWidth = "yes";
+$Description = "Founded in 1969 and headquartered in Hartland Wisconsin, Sullivan Corporation Inc. offers material and services to a diverse customer list including machine shops, metal service centers, OEMs, fabricators, pattern shops, tool and die shops and machine builders throughout North America.";
+$Keywords = "world's largest Blanchard grinder, Sullivan metals, Sullivan corp, Sullivan corporation, highly skilled employees, grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting";
 include "header.php";
 ?>
 

@@ -2,6 +2,8 @@
 $PageTitle = "Gallery";
 $Banner = "";
 $BannerText = "GALLERY";
+$Description = "This is the image gallery for Sullivan Corporation. Here you'll find images of our grinders, flame cutters and more. Take a look! ";
+$Keywords = "grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing";
 include "header.php";
 ?>
 
