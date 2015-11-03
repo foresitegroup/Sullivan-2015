@@ -850,7 +850,7 @@ UL.home {
 }
 
 UL.home LI {
-  padding-bottom: 1.3em;
+  padding-bottom: 0.85em;
 }
 
 UL.home LI:last-child {

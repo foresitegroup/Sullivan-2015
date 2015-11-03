@@ -14,8 +14,6 @@
     <ul>
       <li><a href="<?php echo $TopDir; ?>our-company.php#profile">Profile</a></li>
       <li><a href="<?php echo $TopDir; ?>our-company.php#mission-and-strategy">Mission &amp; Strategy</a></li>
-      <li><a href="<?php echo $TopDir; ?>certifications-and-awards.php">Certifications &amp; Awards</a></li>
-      <li><a href="<?php echo $TopDir; ?>iso.php">ISO</a></li>
     </ul>
   </li>
   <li>

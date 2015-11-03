@@ -45,7 +45,7 @@ include "header.php";
   Quality is the primary commitment of Sullivan.  Our goal is to excel in every element of our business, utilizing Lean Manufacturing Techniques and the best industry benchmarks for achieving Customer Satisfaction and quality.<br>
   <br>
 
-  <img src="images/our-company1.jpg" alt=""><br>
+  <img src="images/our-company2.jpg" alt=""><br>
   <br>
   <br>
 
@@ -63,7 +63,7 @@ include "header.php";
   </div>
 
   <div class="half-right">
-    Sullivan Corporation also has an experienced management team familiar with lean manufacturing programs, ISO certification, and continuous improvement methodologies. The Company additionally uses its more than 400 years of collective artisan experience to match a client's product specifications and schedule.<br>
+    Sullivan Corporation also has an experienced management team familiar with lean manufacturing programs, ISO certification, and continuous improvement methodologies. The Company additionally uses its more than 300 years of collective artisan experience to match a client's product specifications and schedule.<br>
     <br>
 
     The Company intends to continue meeting a need for industrial steel processing services, which are used in a large number of industries.

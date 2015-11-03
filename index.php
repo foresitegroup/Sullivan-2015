@@ -15,11 +15,12 @@ include "header.php";
 
 <div class="one-third fancy-border-right">
   <ul class="home">
-    <li>MATERIAL GRINDING</li>
+    <li>MATERIAL &mdash; STEEL PLATE</li>
     <li>FLAME-CUTTING</li>
+    <li>HIGH DEFINITION PLASMA</li>
     <li>STRESS RELIEVING</li>
     <li>SHOT BLASTING</li>
-    <li>HI-DEF PLASMA CUTTING</li>
+    <li>BLANCHARD GRINDING</li>
   </ul>
 </div>
 
