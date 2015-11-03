@@ -36,49 +36,43 @@ include "header.php";
 
   <h3 id="equipment-list">EQUIPMENT LIST</h3>
 
-  Sullivan Corporation maintains a large assortment of equipment to handle almost any size of metal center project. All of our cutting, stress reliving, abrasive blasting and overhead handling equipment is maintained to the highest industrial safety and accuracy standards in the industry.<br>
+  Sullivan Corporation maintains a large assortment of processing equipment to handle almost any size of project. All of our cutting machines, stress reliving ovens, abrasive blast booths, Blanchard grinders and Overhead handling equipment is maintained to the highest industrial safety and accuracy standards in the industry.<br>
   <br>
 
   Our equipment inventory includes, but is not limited to:<br>
   <br>
 
-  <strong>Reform Bar Grinder</strong><br>
+  <strong>Our Shape Cutting Capacity Include</strong><br>
   <ul style="display: inline-block;">
-    <li>42" Blanchards</li>
-    <li>60" Blanchards</li>
-    <li>100" Blanchards</li>
-    <li>120" Blanchard grinders</li>
-    <li>224" Blanchard</li>
+    <li>CNC Flame Cutting: 10" thick x 120" Wide x 480" Long.</li>
+    <li>High Definition Plasma for unsurpassed accuracy and quality.</li>
   </ul><br>
   <br>
 
-  <strong>Blanchard 200 Series (224" Blanchard)</strong><br>
+  <strong>Our Blanchard Grinding Capacity Include</strong><br>
   <ul style="display: inline-block;">
-    <li>72" of vertical travel</li>
-    <li>224" cross corner swing</li>
-    <li>600 HP Spindle</li>
+    <li>42" Blanchard Grinders: 150 HP, 30" Vertical</li>
+    <li>60" Blanchard Grinders: 200 HP, 30" Vertical</li>
+    <li>66" Blanchard Grinders: 200 HP, 36" Vertical</li>
+    <li>100" Blanchard Grinders: 300 HP, 48" Vertical</li>
+    <li>120" Blanchard Grinders: 350 HP, 50" Vertical</li>
+    <li>224" Blanchard Grinder: 600 HP, 72" Vertical<br>The Largest Blanchard Grinder in the Nation</li>
   </ul><br>
   <br>
 
-  <strong>Flame Cutting Includes:</strong><br>
+  <strong>Our Capacity Stress Relieving Capacity Include</strong><br>
   <ul style="display: inline-block;">
-    <li>CNC Oxy-Fuel Cutting</li>
-    <li>CNC Plasma Arc Cutting</li>
+    <li>106" Wide x 180" Long Oven</li>
+    <li>96" Wide x 120" Long Oven</li>
+    <li>High temperature - 2000&deg;F</li>
   </ul><br>
   <br>
 
-  <strong>Large Capacity Stress Relieving Oven</strong><br>
+  <strong>Our Large Capacity Steel Shot Blasting Capacity Include</strong><br>
   <ul style="display: inline-block;">
-    <li>96' X 96" x 180"</li>
-    <li>High temp 2000&deg;F</li>
-  </ul><br>
-  <br>
-
-  <strong>Abrasive Blasting Including:</strong><br>
-  <ul style="display: inline-block;">
-    <li>Bead blasting</li>
-    <li>Sandblasting</li>
-    <li>Shot blasting</li>
+    <li>12 Foot Wide X 25 Foot Long X 5 Foot High</li>
+    <li>Steel Shot Media</li>
+    <li>50 Ton Crane Capacity</li>
   </ul>
 </article>
 

@@ -39,7 +39,7 @@ include "header.php";
   Founded in 1969 and headquartered in Hartland Wisconsin, Sullivan Corporation Inc. offers material and services to a diverse customer list including machine shops, metal service centers, OEMs, fabricators, pattern shops, tool and die shops and machine builders throughout North America.<br>
   <br>
 
-  With over 400 years of combined craftsman experience we know how to get your metal processing completed precisely, on time &mdash; while saving you money.<br>
+  With over 300 years of combined craftsman experience we know how to get your metal processing completed precisely, on time &mdash; while saving you money.<br>
   <br>
 
   Quality is the primary commitment of Sullivan.  Our goal is to excel in every element of our business, utilizing Lean Manufacturing Techniques and the best industry benchmarks for achieving Customer Satisfaction and quality.<br>

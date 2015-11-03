@@ -47,8 +47,8 @@ include "header.php";
 </div>
 
 <div class="half-right">
-  <img src="images/stress-relieving1.jpg" alt="" class="right">
   <img src="images/stress-relieving2.jpg" alt="" class="right">
+  <img src="images/stress-relieving3.jpg" alt="" class="right">
 </div>
 
 <div style="clear: both;"></div>

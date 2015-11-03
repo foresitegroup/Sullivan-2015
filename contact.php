@@ -15,7 +15,7 @@ $salt = "ForesiteGroupSullivan";
 <h3>SALES CONTACT</h3>
 
 <div class="half-left">
-  With over 400 years of combined craftsman experience we know how to get your metal processing completed precisely, on time - while saving you money.<br>
+  With over 300 years of combined craftsman experience we know how to get your metal processing completed precisely, on time - while saving you money.<br>
   <br>
 
   As a customer your point of contact is a member of the Sullivan Sales Engineering Team. Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.<br>

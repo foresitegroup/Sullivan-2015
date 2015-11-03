@@ -20,7 +20,7 @@ include "header.php";
   The most professional and experienced customer service and sales engineering team is available to provide quotations, product availability, and technical assistance for your projects.<br>
   <br>
 
-  With over 400 years of combine operator experience, all orders, whether they require a critical tolerance  or simply a surface clean-up. Are processed by our team of skilled craftsmen.<br>
+  With over 300 years of combine operator experience, all orders, whether they require a critical tolerance  or simply a surface clean-up. Are processed by our team of skilled craftsmen.<br>
   <br>
 
   High horsepower, large capacity Blanchard Grinding equipment is the backbone of our contract services.<br>

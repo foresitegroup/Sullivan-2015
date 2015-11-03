@@ -6,7 +6,7 @@ include "header.php";
 <div class="one-third">
   <h1>OUR COMPANY</h1>
   <span class="home">
-    Sullivan Metals is your full service plate center, providing a full range of steel plate, grinding, flame cutting, sawing and other processing capabilities throughout the United States. Centrally located in the Midwest we provide quick and reliable plate services for the entire country.
+    Sullivan Metals is your full service plate center, providing a full range of material, grinding, flame cutting, and other processing capabilities. Centrally located in the Midwest we provide quick and reliable plate services for the entire country.
   </span><br>
   <br>
 
@@ -15,10 +15,11 @@ include "header.php";
 
 <div class="one-third fancy-border-right">
   <ul class="home">
-    <li>GRINDING</li>
+    <li>MATERIAL GRINDING</li>
     <li>FLAME-CUTTING</li>
     <li>STRESS RELIEVING</li>
     <li>SHOT BLASTING</li>
+    <li>HI-DEF PLASMA CUTTING</li>
   </ul>
 </div>
 

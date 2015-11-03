@@ -17,7 +17,7 @@ include "header.php";
   The Sullivan Corporation is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.<br>
   <br>
 
-  With over 400 years of collective Artisan experience in steel plate processing, you can rely on our ability to process simple to complex steel plate components to your exact specification.<br>
+  With over 300 years of collective Artisan experience in steel plate processing, you can rely on our ability to process simple to complex steel plate components to your exact specification.<br>
   <br>
 
   The Sullivan Corporation operates two facilities in Southeast Wisconsin: a 35,000 square foot facility in Hartland Wisconsin, the main sales headquarters and grinding operation and a 50,000 square foot facility in the Port of Milwaukee where plate inventory, flame-cutting, high definition plasma-cutting, stress relieving and steel shot blasting services are performed. From a single component to production volumes we can provide it all under one roof and under a single point of control.<br>
