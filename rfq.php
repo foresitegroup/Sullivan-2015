@@ -24,7 +24,7 @@ $salt = "ForesiteGroupSullivan";
           $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
         ) {
       // All required fields have been filled, so construct the message
-      $SendTo = "sales@thesullivancorp.com";
+      $SendTo = "gbohn@thesullivancorp.com";
       $Subject = "RFQ From Sullivan Website";
       $From = "From: RFQ Form <rfqform@thesullivancorp.com>\r\n";
       $From .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
