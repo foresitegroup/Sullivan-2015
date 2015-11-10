@@ -49,6 +49,18 @@ function email($address, $name="") {
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/dd_belatedpng.js"></script>
     <script type="text/javascript">DD_belatedPNG.fix('img, .png');</script>
     <![endif]-->
+
+    <!-- BEGIN Google Analytics -->
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-12449023-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+    <!-- END Google Analytics -->
   </head>
   <body<?php if ($PageTitle == "") echo " style=\"background: url(images/background.jpg)\";"; ?>>
 
