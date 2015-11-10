@@ -26,7 +26,7 @@
   <li><a href="<?php echo $TopDir; ?>gallery.php">Gallery</a></li>
   <li><a href="<?php echo $TopDir; ?>news">News</a></li>
   <li>
-    <a href="contact.php">Contact <i class="fa fa-angle-double-down"></i></a>
+    <a href="<?php echo $TopDir; ?>contact.php">Contact <i class="fa fa-angle-double-down"></i></a>
     <ul>
       <li><a href="<?php echo $TopDir; ?>rmi.php">Request More Info</a></li>
       <li><a href="<?php echo $TopDir; ?>rfq.php">Request For Quote</a></li>
