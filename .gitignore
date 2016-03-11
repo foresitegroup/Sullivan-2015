@@ -48,3 +48,4 @@ news/wp-content/*
 !news/wp-content/themes/
 news/wp-content/themes/*
 !news/wp-content/themes/sullivan
+inc/swiftmailer

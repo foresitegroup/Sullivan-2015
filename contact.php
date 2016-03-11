@@ -60,7 +60,7 @@ $salt = "ForesiteGroupSullivan";
           $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
         ) {
       // All required fields have been filled, so construct the message
-      $SendTo = "gbohn@thesullivancorp.com";
+      $SendTo = "gbohn@thesullivancorp.com, erauter@thesullivancorp.com, sales@thesullivancorp.com, mark@foresitegrp.com";
       $Subject = "Comment From Sullivan Website";
       $From = "From: Contact Form <contactform@thesullivancorp.com>\r\n";
       $From .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
@@ -80,7 +80,6 @@ $salt = "ForesiteGroupSullivan";
       $Message = stripslashes($Message);
 
       mail($SendTo, $Subject, $Message, $From);
-      //echo "<pre>$Message</pre><br><br>";
 
       echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Metals.  You will be contacted shortly.";
     } else {

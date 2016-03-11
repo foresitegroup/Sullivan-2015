@@ -1,4 +1,6 @@
 <?php
+if (!isset($TopDir)) $TopDir = "";
+
 function email($address, $name="") {
   for ($i = 0; $i < strlen($address); $i++) { $email .= (rand(0, 1) == 0) ? "&#" . ord(substr($address, $i)) . ";" : substr($address, $i, 1); }
   if ($name == "") $name = $email;
@@ -110,7 +112,7 @@ function email($address, $name="") {
           <h1>REQUEST A QUOTE</h1>
           With insight and engineering talent, our sales engineers are available to provide quotations, product availability and technical assistance for your project.<br>
           <br>
-          <a href="contact.php">READ MORE</a>
+          <a href="rfq.php">READ MORE</a>
         </div>
       </div>
     </div>
