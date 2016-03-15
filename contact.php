@@ -81,7 +81,7 @@ $salt = "ForesiteGroupSullivan";
 
       mail($SendTo, $Subject, $Message, $From);
 
-      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Metals.  You will be contacted shortly.";
+      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Corporation.  You will be contacted shortly.";
     } else {
       echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
     }
