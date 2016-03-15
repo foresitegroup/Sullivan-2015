@@ -73,7 +73,7 @@ if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
     $sm->setReplyTo($_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])]);
     $sm->setSubject("RFQ From Sullivan Website");
 
-    $allowed = array("pdf","dwg","dfx","xls","xlsx");
+    $allowed = array("pdf","dwg","dfx","doc","docx","xls","xlsx","txt");
 
     if ($_FILES['file1']['tmp_name'] != "") {
       if ($_FILES['file1']['size'] <= 1048576) {
@@ -197,7 +197,7 @@ Please fill in the fields below so we can process and send your Request For Quot
     <input type="text" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="EMAIL *"><br>
     <br>
 
-    <strong>Provide document(s)</strong> <span style="font-size: 80%;">Only .pdf, .dwg, .dfx, .xls or .xlsx are allowed.</span><br>
+    <strong>Provide document(s)</strong> <span style="font-size: 80%;">Only .pdf, .dwg, .dfx, .doc, .docx, .xls, .xlsx or .txt allowed.</span><br>
     <input type="file" name="file1" id="file1"><br>
     <input type="file" name="file2" id="file2"><br>
     <input type="file" name="file3" id="file3"><br>
