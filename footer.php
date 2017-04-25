@@ -8,7 +8,7 @@
           <div class="spiff-sep"></div>
           <h1>BLANCHARD GRINDING</h1>
           <div class="spiff-text">
-            Sullivan Metals has a grinder to meet almost every need. Grinding is where we have made our name, expanding on our services to meet the diverse needs of our customers &amp; an ever-changing economy.
+            Sullivan Precision Plate has a grinder to meet almost every need. Grinding is where we have made our name, expanding on our services to meet the diverse needs of our customers &amp; an ever-changing economy.
           </div>
           <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
         </a>
@@ -61,7 +61,7 @@
         <div id="location">
           <img src="<?php echo $TopDir; ?>images/logo-footer.png" alt="" id="logo-footer"><br>
           <div id="loc-left">
-            <strong>The Sullivan Corporation</strong><br>
+            <strong>Sullivan Precision Plate</strong><br>
             460 Cardinal Lane<br>
             Hartland, Wisconsin 53029
           </div>
@@ -102,7 +102,7 @@
         </div>
 
         <div id="copyright">
-          &copy; <?php echo date("Y"); ?> All rights reserved, Sullivan Corporation. Site by <a href="http://www.foresitegrp.com">Foresite Group</a>
+          &copy; <?php echo date("Y"); ?> All rights reserved, Sullivan Precision Plate. Site by <a href="http://www.foresitegrp.com">Foresite Group</a>
         </div>
 
         <div style="clear: both;"></div>

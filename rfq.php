@@ -134,7 +134,7 @@ if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
     // Send it!
     $result = $mailer->send($sm);
 
-    echo "<strong>Your quote has been submitted!</strong><br>\n<br>\nThank you for your interest in Sullivan Corporation.  A Sullivan sales engineer will follow up with this RFQ to ensure we understand the details of your manufacturing needs.";
+    echo "<strong>Your quote has been submitted!</strong><br>\n<br>\nThank you for your interest in Sullivan Precision Plate.  A Sullivan sales engineer will follow up with this RFQ to ensure we understand the details of your manufacturing needs.";
   } else {
     echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
   }

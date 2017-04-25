@@ -6,7 +6,7 @@ include "header.php";
 <div class="one-third">
   <h1>OUR COMPANY</h1>
   <span class="home">
-    Sullivan Metals is your full service plate center, providing a full range of material, grinding, flame cutting, and other processing capabilities. Centrally located in the Midwest we provide quick and reliable plate services for the entire country.
+    Sullivan Precision Plate is your full service plate center, providing a full range of material, grinding, flame cutting, and other processing capabilities. Centrally located in the Midwest we provide quick and reliable plate services for the entire country.
   </span><br>
   <br>
 

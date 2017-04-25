@@ -51,7 +51,7 @@ $salt = "ForesiteGroupSullivan";
       
       mail($SendTo, $Subject, $Message, $From);
       
-      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Corporation.  You will be contacted shortly.";
+      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Precision Plate.  You will be contacted shortly.";
     } else {
       echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
     }
@@ -66,7 +66,7 @@ $salt = "ForesiteGroupSullivan";
     }
   </script>
   
-  Please fill in the fields below so we can return to you more information about Sullivan Corporation. Required fields include *<br>
+  Please fill in the fields below so we can return to you more information about Sullivan Precision Plate. Required fields include *<br>
   <br>
 
   <form action="rmi.php" method="POST" onSubmit="return checkform(this)" id="contact">
@@ -128,7 +128,7 @@ $salt = "ForesiteGroupSullivan";
 </div>
 
 <div class="half-right">
-  <strong>Sullivan Corporation</strong><br>
+  <strong>Sullivan Precision Plate</strong><br>
   460 Cardinal Lane<br>
   Hartland, Wisconsin 53029<br>
   <br>

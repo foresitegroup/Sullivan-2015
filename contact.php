@@ -40,7 +40,7 @@ $salt = "ForesiteGroupSullivan";
   Email <?php email("erauter@thesullivancorp.com"); ?><br>
   <br>
 
-  <strong>Sullivan Corporation</strong><br>
+  <strong>Sullivan Precision Plate</strong><br>
   460 Cardinal Lane<br>
   Hartland, Wisconsin 53029<br>
 </div>
@@ -81,7 +81,7 @@ $salt = "ForesiteGroupSullivan";
 
       mail($SendTo, $Subject, $Message, $From);
 
-      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Corporation.  You will be contacted shortly.";
+      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Precision Plate.  You will be contacted shortly.";
     } else {
       echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
     }
@@ -141,7 +141,7 @@ $salt = "ForesiteGroupSullivan";
 
 <div class="half-right">
   <h4>MAILING</h4>
-  <strong>Sullivan Corporation</strong><br>
+  <strong>Sullivan Precision Plate</strong><br>
   460 Cardinal Lane<br>
   Hartland, Wisconsin 53029<br>
   <br>
@@ -152,14 +152,14 @@ $salt = "ForesiteGroupSullivan";
   <br>
 
   <h4>HEADQUARTERS/DOCK/DELIVERY<br>HARTLAND, WI</h4>
-  <strong>Sullivan Corporation</strong><br>
+  <strong>Sullivan Precision Plate</strong><br>
   460 Cardinal Lane<br>
   Hartland, Wisconsin 53029<br>
   <br>
   <br>
 
   <h4>DOCK/DELIVERY<br>PORT OF MILWAUKEE, WI</h4>
-  <strong>Sullivan Corporation</strong><br>
+  <strong>Sullivan Precision Plate</strong><br>
   2050 S Aldrich St<br>
   Milwaukee, Wisconsin 53204
 </div>
@@ -211,7 +211,7 @@ $salt = "ForesiteGroupSullivan";
     });
 
     var infowindow = new google.maps.InfoWindow({
-      content: '<div id="content"><div id="bodyContent"><strong>Sullivan Corporation</strong><br>460 Cardinal Ln<br>Hartland, WI 53029<br><a href="https://www.google.com/maps/place/Sullivan+Corporation/@43.095001,-88.351621,15z/data=!4m2!3m1!1s0x0:0x93bc25b7070c5738?hl=en-US" target="new">View larger map</a></div></div>'
+      content: '<div id="content"><div id="bodyContent"><strong>Sullivan Precision Plate</strong><br>460 Cardinal Ln<br>Hartland, WI 53029<br><a href="https://www.google.com/maps/place/Sullivan+Corporation/@43.095001,-88.351621,15z/data=!4m2!3m1!1s0x0:0x93bc25b7070c5738?hl=en-US" target="new">View larger map</a></div></div>'
     });
 
     google.maps.event.addListener(marker, 'click', function() {

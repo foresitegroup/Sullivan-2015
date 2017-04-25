@@ -3,7 +3,7 @@ $PageTitle = "Our Company";
 $Banner = "sub-banner-our-company.jpg";
 $BannerText = "OUR COMPANY";
 $FullWidth = "yes";
-$Description = "Founded in 1969 and headquartered in Hartland Wisconsin, Sullivan Corporation Inc. offers material and services to a diverse customer list including machine shops, metal service centers, OEMs, fabricators, pattern shops, tool and die shops and machine builders throughout North America.";
+$Description = "Founded in 1969 and headquartered in Hartland Wisconsin, Sullivan Precision Plate offers material and services to a diverse customer list including machine shops, metal service centers, OEMs, fabricators, pattern shops, tool and die shops and machine builders throughout North America.";
 $Keywords = "world's largest Blanchard grinder, Sullivan metals, Sullivan corp, Sullivan corporation, highly skilled employees, grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting";
 include "header.php";
 ?>
@@ -13,7 +13,7 @@ include "header.php";
     <h3 id="mission-and-strategy">MISSION &amp; STRATEGY</h3>
 
     <div class="half-left">
-      <strong>&bull;</strong> The Sullivan Corporation is committed to expanding its business through the distribution of a growing range of processed steel plate that meet the requirements and expectations of our customers.<br>
+      <strong>&bull;</strong> Sullivan Precision Plate is committed to expanding its business through the distribution of a growing range of processed steel plate that meet the requirements and expectations of our customers.<br>
       <br>
 
       <strong>&bull;</strong> To develop outstanding partnerships with our principal suppliers to ensure that materials are delivered competitively and on time, leading to mutually beneficial outcomes.<br>
@@ -36,7 +36,7 @@ include "header.php";
 <article>
   <h3 id="our-company">OUR COMPANY</h3>
 
-  Founded in 1969 and headquartered in Hartland Wisconsin, Sullivan Corporation Inc. offers material and services to a diverse customer list including machine shops, metal service centers, OEMs, fabricators, pattern shops, tool and die shops and machine builders throughout North America.<br>
+  Founded in 1969 and headquartered in Hartland Wisconsin, Sullivan Precision Plate offers material and services to a diverse customer list including machine shops, metal service centers, OEMs, fabricators, pattern shops, tool and die shops and machine builders throughout North America.<br>
   <br>
 
   With over 300 years of combined craftsman experience we know how to get your metal processing completed precisely, on time &mdash; while saving you money.<br>
@@ -53,7 +53,7 @@ include "header.php";
   <h3 id="profile">COMPANY PROFILE</h3>
 
   <div class="half-left">
-    For more than 45 years, Sullivan Corporation has provided the best in steel plate processing services. The Sullivan Corporation offers a full inventory of steel plate for purchase, as well as a variety of services, including Blanchard Grinding, Flame Cutting, High Definition Plasma Cutting, Thermal Stress Relieving, and Steel Shot Blasting.  The Company specializes in the quick response and production of precision ground steel plate products. Sullivan Corporation serves a large number of industries, including: Paper, Machine Builders, Die Set Builders, Logging, Mining, Medical, Machine Tool, Oil Tool, Automotive, Fabricators, Forging, Casting and Renewable Energy.<br>
+    For more than 45 years, Sullivan Precision Plate has provided the best in steel plate processing services. Sullivan Precision Plate offers a full inventory of steel plate for purchase, as well as a variety of services, including Blanchard Grinding, Flame Cutting, High Definition Plasma Cutting, Thermal Stress Relieving, and Steel Shot Blasting.  The Company specializes in the quick response and production of precision ground steel plate products. Sullivan Precision Plate serves a large number of industries, including: Paper, Machine Builders, Die Set Builders, Logging, Mining, Medical, Machine Tool, Oil Tool, Automotive, Fabricators, Forging, Casting and Renewable Energy.<br>
     <br>
 
     Sullivan is home to the world's largest Blanchard Rotary Grinder, with 224" cross-corner capacity, 72" of vertical height, and a 600HP spindle.<br>
@@ -63,7 +63,7 @@ include "header.php";
   </div>
 
   <div class="half-right">
-    Sullivan Corporation also has an experienced management team familiar with lean manufacturing programs, ISO certification, and continuous improvement methodologies. The Company additionally uses its more than 300 years of collective artisan experience to match a client's product specifications and schedule.<br>
+    Sullivan Precision Plate also has an experienced management team familiar with lean manufacturing programs, ISO certification, and continuous improvement methodologies. The Company additionally uses its more than 300 years of collective artisan experience to match a client's product specifications and schedule.<br>
     <br>
 
     The Company intends to continue meeting a need for industrial steel processing services, which are used in a large number of industries.

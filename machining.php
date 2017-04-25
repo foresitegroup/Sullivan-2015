@@ -8,7 +8,7 @@ include "header.php";
 
 <h3>MACHINING SERVICES</h3>
 
-Sullivan Corporation has the knowledge, resources and equipment to completely support all types of machining services. Every unfinished part needs machining by cutting away some material. Our large machining services ensure tight tolerances and hence perfect geometry of final parts. With our equipment and experience in large and small machining services, we perform various machining processes including Milling, Grinding, Boring, and Drilling services.
+Sullivan Precision Plate has the knowledge, resources and equipment to completely support all types of machining services. Every unfinished part needs machining by cutting away some material. Our large machining services ensure tight tolerances and hence perfect geometry of final parts. With our equipment and experience in large and small machining services, we perform various machining processes including Milling, Grinding, Boring, and Drilling services.
 
 <hr class="fancy fancy-em">
 

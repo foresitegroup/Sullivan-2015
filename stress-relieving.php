@@ -3,7 +3,7 @@ $PageTitle = "Stress Relieving";
 $Banner = "sub-banner-stress-relieving.jpg";
 $BannerText = "SERVICES / <strong>STRESS RELIEVING</strong>";
 $ServicesMenu = "yes";
-$Description = "The Sullivan Corporation is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.";
+$Description = "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.";
 $Keywords = "grinding, flame cutting, stress relieving, steel shot blasting, largest grinding capabilities in the Midwest, Blanchard grinding, oxy-fuel cutting, high definition plasma, CNC flame cutting, metal stress relieving, machining, shot blasting, metal shot blasting, Sullivan corporation, Sullivan corp, Sullivan metals";
 include "header.php";
 ?>

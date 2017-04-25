@@ -3,7 +3,7 @@ $PageTitle = "Facilities";
 $Banner = "sub-banner-our-company.jpg";
 $BannerText = "FACILITIES";
 $FullWidth = "yes";
-$Description = "The Sullivan Corporation operates two facilities in Southeast Wisconsin: a 35,000 square foot facility in Hartland WI, the main sales headquarters and grinding operation, and a 50,000 square foot facility in the Port of Milwaukee.";
+$Description = "Sullivan Precision Plate operates two facilities in Southeast Wisconsin: a 35,000 square foot facility in Hartland WI, the main sales headquarters and grinding operation, and a 50,000 square foot facility in the Port of Milwaukee.";
 $Keywords = "steel plate, Blanchard grinding, flame cutting, high definition plasma, thermal stress relieving, steel shot blasting, Sullivan corp, Sullivan metals, Sullivan corporation, abrasive blasting, reform bar grinder, 42&quot; blanchards, 100&quot; blanchards, 224&quot; Blanchard, 224&quot; cross corner swing, CNC plasma arc cutting, CNC oxy-fuel cutting, bead blasting, sandblasting, shot blasting, serving the paper industry, serving the marine and ship building industry, serving the oil and gas drilling industry";
 include "header.php";
 ?>
@@ -14,7 +14,7 @@ include "header.php";
 
     <h3>FACILITIES</h3>
 
-    The Sullivan Corporation operates two facilities in Southeast Wisconsin: a 35,000 square foot facility in Hartland WI, the main sales headquarters and grinding operation, and a 50,000 square foot facility in the Port of Milwaukee, where plate inventory, flame cutting, high definition plasma, stress relieving and shot blasting operations are performed.<br>
+    Sullivan Precision Plate operates two facilities in Southeast Wisconsin: a 35,000 square foot facility in Hartland WI, the main sales headquarters and grinding operation, and a 50,000 square foot facility in the Port of Milwaukee, where plate inventory, flame cutting, high definition plasma, stress relieving and shot blasting operations are performed.<br>
     <br>
 
     <strong>The company's primary services include:</strong><br>
@@ -36,7 +36,7 @@ include "header.php";
 
   <h3 id="equipment-list">EQUIPMENT LIST</h3>
 
-  Sullivan Corporation maintains a large assortment of processing equipment to handle almost any size of project. All of our cutting machines, stress reliving ovens, abrasive blast booths, Blanchard grinders and Overhead handling equipment is maintained to the highest industrial safety and accuracy standards in the industry.<br>
+  Sullivan Precision Plate maintains a large assortment of processing equipment to handle almost any size of project. All of our cutting machines, stress reliving ovens, abrasive blast booths, Blanchard grinders and Overhead handling equipment is maintained to the highest industrial safety and accuracy standards in the industry.<br>
   <br>
 
   Our equipment inventory includes, but is not limited to:<br>
@@ -80,7 +80,7 @@ include "header.php";
   <article>
     <h3 id="industries-served">INDUSTRIES SERVED</h3>
 
-    Sullivan Corporation going strong for over 45 years has worked in many industries throughout the US and the world. Our services are and have been employed in such industries as:<br>
+    Sullivan Precision Plate going strong for over 45 years has worked in many industries throughout the US and the world. Our services are and have been employed in such industries as:<br>
 
     <div class="one-third-ul">
       <ul class="spaced">

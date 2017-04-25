@@ -3,7 +3,7 @@ $PageTitle = "Grinding";
 $Banner = "sub-banner-grinding.jpg";
 $BannerText = "SERVICES / <strong>GRINDING</strong>";
 $ServicesMenu = "yes";
-$Description = "The Sullivan Corporation is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.";
+$Description = "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.";
 $Keywords = "grinding, flame cutting, stress relieving, steel shot blasting, largest grinding capabilities in the Midwest, Blanchard grinding, oxy-fuel cutting, high definition plasma, CNC flame cutting, metal stress relieving, machining, shot blasting, metal shot blasting, Sullivan corporation, Sullivan corp, Sullivan metals";
 include "header.php";
 ?>
@@ -14,7 +14,7 @@ include "header.php";
   <strong>Largest Grinding Capabilities in the Midwest</strong><br>
   <br>
 
-  The Sullivan Corporation has been serving the grinding industry for over 45 years.<br>
+  Sullivan Precision Plate has been serving the grinding industry for over 45 years.<br>
   <br>
 
   The most professional and experienced customer service and sales engineering team is available to provide quotations, product availability, and technical assistance for your projects.<br>

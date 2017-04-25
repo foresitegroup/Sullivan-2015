@@ -13,12 +13,12 @@ function email($address, $name="") {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Sullivan Corporation<?php if ($PageTitle != "") echo " | " . $PageTitle; ?></title>
+    <title>Sullivan Precision Plate<?php if ($PageTitle != "") echo " | " . $PageTitle; ?></title>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $TopDir; ?>images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo $TopDir; ?>images/apple-touch-icon.png">
 
-    <meta name="description" content="<?php echo ($Description != "") ? $Description : "The Sullivan Corporation is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications."; ?>">
-    <meta name="keywords" content="<?php echo ($Keywords != "") ? $Keywords : "grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing"; ?>">
+    <meta name="description" content="<?php echo ($Description != "") ? $Description : "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications."; ?>">
+    <meta name="keywords" content="<?php echo ($Keywords != "") ? $Keywords : "grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan Precision Plate, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing"; ?>">
     <meta name="author" content="Foresite Group">
 
     <meta name="viewport" content="width=device-width">
@@ -68,7 +68,7 @@ function email($address, $name="") {
 
     <div id="header-wrap">
       <header>
-        <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png" alt="KM Tooling" id="logo"></a>
+        <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png?20170425" alt="KM Tooling" id="logo"></a>
 
         <div id="topmenu">
           <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="<?php echo $TopDir; ?>rfq.php">RFQ</a> | <a href="<?php echo $TopDir; ?>contact.php">SALES ENGINEER</a> | <a href="<?php echo $TopDir; ?>contact.php">CONTACT</a>
@@ -102,7 +102,7 @@ function email($address, $name="") {
       <div style="background: url(images/home-banner1.jpg) top center no-repeat;">
         <div>
           <h1>LARGEST GRINDING CAPABILITIES IN THE MIDWEST</h1>
-          The Sullivan Corporation has been serving the grinding industry for over 45 years.<br>
+          Sullivan Precision Plate has been serving the grinding industry for over 45 years.<br>
           <br>
           <a href="grinding.php">READ MORE</a>
         </div>
