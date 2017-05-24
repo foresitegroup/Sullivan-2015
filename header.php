@@ -22,7 +22,7 @@ function email($address, $name="") {
     <meta name="author" content="Foresite Group">
 
     <meta name="viewport" content="width=device-width">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css">
 

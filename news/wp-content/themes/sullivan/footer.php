@@ -9,8 +9,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-$TopDir = ($_SERVER['DOCUMENT_ROOT'] != dirname(__FILE__)) ? "http://" . $_SERVER['SERVER_NAME'] . "/" : "";
-if ($_SERVER['SERVER_NAME'] == "localhost") { $parts = explode("/", $_SERVER['REQUEST_URI']); $TopDir .= $parts[1] . "/"; }
+$TopDir = substr( home_url(), 0, strrpos( home_url(), '/')+1);
 
 include "../footer.php";
 ?>
