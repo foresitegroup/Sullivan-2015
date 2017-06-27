@@ -31,13 +31,13 @@ $salt = "ForesiteGroupSullivan";
   <strong>Gerry Bohn</strong> - Manager of Sales<br>
   Phone 262-369-7200<br>
   Toll Free 800-943-9511<br>
-  Email <?php email("gbohn@thesullivancorp.com"); ?><br>
+  Email <?php email("gbohn@sullivanplate.com"); ?><br>
   <br>
 
   <strong>Ed Rauter</strong><br>
   Phone 262-369-7200<br>
   Toll Free 800-943-9511<br>
-  Email <?php email("erauter@thesullivancorp.com"); ?><br>
+  Email <?php email("erauter@sullivanplate.com"); ?><br>
   <br>
 
   <strong>Sullivan Precision Plate</strong><br>
@@ -60,9 +60,9 @@ $salt = "ForesiteGroupSullivan";
           $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
         ) {
       // All required fields have been filled, so construct the message
-      $SendTo = "gbohn@thesullivancorp.com, erauter@thesullivancorp.com, sales@thesullivancorp.com, mark@foresitegrp.com";
+      $SendTo = "gbohn@sullivanplate.com, erauter@sullivanplate.com, sales@sullivanplate.com, mark@foresitegrp.com";
       $Subject = "Comment From Sullivan Website";
-      $From = "From: Contact Form <contactform@thesullivancorp.com>\r\n";
+      $From = "From: Contact Form <contactform@sullivanplate.com>\r\n";
       $From .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
 
       $Message = "Comment from " . $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . " (" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . ")";

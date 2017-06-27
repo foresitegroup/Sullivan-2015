@@ -69,7 +69,7 @@
           <div id="loc-right">
             <strong style="color: #72A536;">P:</strong> (262) 369-7200<br>
             <strong style="color: #72A536;">F:</strong> (262) 369-7219<br>
-            <strong style="color: #72A536;">E:</strong> <?php email("sales@thesullivancorp.com"); ?>
+            <strong style="color: #72A536;">E:</strong> <?php email("sales@sullivanplate.com"); ?>
           </div>
 
           <div style="clear: both;"></div>
