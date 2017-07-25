@@ -60,10 +60,11 @@ $salt = "ForesiteGroupSullivan";
           $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
         ) {
       // All required fields have been filled, so construct the message
-      $SendTo = "gbohn@sullivanplate.com, erauter@sullivanplate.com, sales@sullivanplate.com, mark@foresitegrp.com";
+      $SendTo = "gbohn@sullivanplate.com, erauter@sullivanplate.com";
       $Subject = "Comment From Sullivan Website";
       $From = "From: Contact Form <contactform@sullivanplate.com>\r\n";
       $From .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
+      $From .= "Bcc: mark@foresitegrp.com\r\n";
 
       $Message = "Comment from " . $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . " (" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . ")";
 

@@ -67,7 +67,7 @@ if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
     require_once "inc/swiftmailer/swift_required.php";
 
     $sm = Swift_Message::newInstance();
-    $sm->setTo(array("gbohn@sullivanplate.com", "erauter@sullivanplate.com", "sales@sullivanplate.com"));
+    $sm->setTo(array("gbohn@sullivanplate.com", "erauter@sullivanplate.com"));
     $sm->setBcc(array("mark@foresitegrp.com"));
     $sm->setFrom(array("rfqform@sullivanplate.com" => "RFQ Form"));
     $sm->setReplyTo($_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])]);
