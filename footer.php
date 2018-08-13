@@ -59,7 +59,7 @@
     <div id="footer1">
       <footer>
         <div id="location">
-          <img src="<?php echo $TopDir; ?>images/logo-footer.png" alt="" id="logo-footer"><br>
+          <img src="<?php echo $TopDir; ?>images/logo-footer.png?<?php echo filemtime('images/logo-footer.png'); ?>" alt="" id="logo-footer"><br>
           <div id="loc-left">
             <strong>Sullivan Precision Plate</strong><br>
             460 Cardinal Lane<br>

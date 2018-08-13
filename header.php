@@ -68,7 +68,7 @@ function email($address, $name="") {
 
     <div id="header-wrap">
       <header>
-        <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png?20170425" alt="KM Tooling" id="logo"></a>
+        <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png?<?php echo filemtime('images/logo.png'); ?>" alt="KM Tooling" id="logo"></a>
 
         <div id="topmenu">
           <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="<?php echo $TopDir; ?>rfq.php">RFQ</a> | <a href="<?php echo $TopDir; ?>contact.php">SALES ENGINEER</a> | <a href="<?php echo $TopDir; ?>contact.php">CONTACT</a>
