@@ -167,7 +167,7 @@ $salt = "ForesiteGroupSullivan";
 
 <div style="clear: both;"></div>
 
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTbHAsLFN-nVXXIDAZiynPZT1DfoDyNwE"></script>
 <script>
   function ViewLargerMap(VLMa, map) {
     var VLMui = document.createElement('a');
