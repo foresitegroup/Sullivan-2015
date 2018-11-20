@@ -548,6 +548,37 @@ A.spiff:hover .readmore, A.spiff:active .readmore {
   color: #6D6E71;
 }
 
+#inventory {
+  background: #72A536 url(../images/grid.png) center;
+  position: relative;
+  overflow: hidden;
+}
+
+#inventory:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 53%;
+  height: 100%;
+  width: 100%;
+  background: url(../images/inventory-plates.png) no-repeat left center;
+  background-size: contain;
+}
+
+#inventory ARTICLE {
+  margin: 0 auto;
+  padding: 1em 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+#inventory ARTICLE DIV { width: 50%; }
+
+#inventory ARTICLE EM { color: #263943; font-weight: 800; }
+
 #callus {
   width: 100%;
   margin: 0;
@@ -755,6 +786,11 @@ IMG.right {
 .half-right {
   float: right;
   width: 46.7%;
+}
+
+.half-left IMG, .half-right IMG {
+  max-width: 100%;
+  height: auto;
 }
 
 .half-left IMG.left {
@@ -1124,6 +1160,11 @@ ARTICLE#fullwidth {
   #sub-banner {
     background-size: cover !important;
   }
+}
+
+@media only screen and (max-width: 1040px) {
+  #inventory:before { background-size: cover; }
+  #inventory ARTICLE { width: 96%; }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1596,6 +1637,8 @@ ARTICLE#fullwidth {
     margin: 0 0 1em;
     min-height: 0;
   }
+
+  #inventory ARTICLE DIV { width: 60%; }
 
   #location {
     width: 96%;

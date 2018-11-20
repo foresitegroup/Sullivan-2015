@@ -1,5 +1,6 @@
 <?php
 $PageTitle = "";
+$Inventory = "no";
 include "header.php";
 ?>
 
@@ -16,7 +17,7 @@ include "header.php";
 <div class="one-third fancy-border-right">
   <ul class="home">
     <li>MATERIAL &mdash; STEEL PLATE</li>
-    <li>FLAME-CUTTING</li>
+    <li>OXY-FUEL CUTTING</li>
     <li>HIGH DEFINITION PLASMA</li>
     <li>STRESS RELIEVING</li>
     <li>SHOT BLASTING</li>

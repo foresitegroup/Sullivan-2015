@@ -4,7 +4,8 @@
     <a href="<?php echo $TopDir; ?>services.php">Services <i class="fa fa-angle-double-down"></i></a>
     <ul>
       <li><a href="<?php echo $TopDir; ?>grinding.php">Grinding</a></li>
-      <li><a href="<?php echo $TopDir; ?>flame-cutting.php">Flame Cutting</a></li>
+      <li><a href="<?php echo $TopDir; ?>oxy-fuel-cutting.php">Oxy-Fuel Cutting</a></li>
+      <li><a href="<?php echo $TopDir; ?>high-definition-plasma-cutting.php">High Definition Plasma Cutting</a></li>
       <li><a href="<?php echo $TopDir; ?>stress-relieving.php">Stress Relieving</a></li>
       <li><a href="<?php echo $TopDir; ?>steel-shot-blasting.php">Steel Shot Blasting</a></li>
     </ul>

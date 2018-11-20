@@ -23,12 +23,12 @@
           <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
         </a>
 
-        <a href="<?php echo $TopDir; ?>flame-cutting.php" class="spiff spiff-mid2">
+        <a href="<?php echo $TopDir; ?>oxy-fuel-cutting.php" class="spiff spiff-mid2">
           <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt=""></div>
           <div class="spiff-sep"></div>
-          <h1>FLAME CUTTING</h1>
+          <h1>OXY-FUEL CUTTING</h1>
           <div class="spiff-text">
-            Flame cutting will produce products that range from simple rectangles, circles, and rings, to intricate shapes custom-cut to specification.
+            Oxy-Fuel Cutting will produce products that range from simple rectangles, circles, and rings, to intricate shapes custom-cut to specification.
           </div>
           <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
         </a>
@@ -48,8 +48,19 @@
     </div>
     <?php } ?>
 
-    <?php if ($Map != "") { ?>
+    <?php if (!empty($Map)) { ?>
     <div id="map-canvas"></div>
+    <?php } ?>
+    
+    <?php if (empty($Inventory)) { ?>
+    <div id="inventory">
+      <article>
+        <div>
+          We carry and sell multiple types of steel in a wide variety of sizes.<br>
+          <em>Ask about our inventory today!</em>
+        </div>
+      </article>
+    </div>
     <?php } ?>
 
     <article id="callus">

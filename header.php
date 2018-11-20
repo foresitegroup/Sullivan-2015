@@ -2,6 +2,7 @@
 if (!isset($TopDir)) $TopDir = "";
 
 function email($address, $name="") {
+  $email = "";
   for ($i = 0; $i < strlen($address); $i++) { $email .= (rand(0, 1) == 0) ? "&#" . ord(substr($address, $i)) . ";" : substr($address, $i, 1); }
   if ($name == "") $name = $email;
   echo "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;$email\">$name</a>";
@@ -17,14 +18,14 @@ function email($address, $name="") {
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $TopDir; ?>images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo $TopDir; ?>images/apple-touch-icon.png">
 
-    <meta name="description" content="<?php echo ($Description != "") ? $Description : "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications."; ?>">
-    <meta name="keywords" content="<?php echo ($Keywords != "") ? $Keywords : "grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan Precision Plate, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing"; ?>">
+    <meta name="description" content="<?php echo (!empty($Description)) ? $Description : "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications."; ?>">
+    <meta name="keywords" content="<?php echo (!empty($Keywords)) ? $Keywords : "grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan Precision Plate, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing"; ?>">
     <meta name="author" content="Foresite Group">
 
     <meta name="viewport" content="width=device-width">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css">
+    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css?<?php if ($TopDir == "") echo filemtime('inc/main.css'); ?>">
 
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="<?php echo $TopDir; ?>inc/bootstrap-collapse.js"></script>
@@ -52,7 +53,7 @@ function email($address, $name="") {
     <script type="text/javascript">DD_belatedPNG.fix('img, .png');</script>
     <![endif]-->
 
-    <!-- BEGIN Google Analytics -->
+    <!-- BEGIN Google Analytics (http://thesullivancorp.com) -->
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -63,12 +64,21 @@ function email($address, $name="") {
     pageTracker._trackPageview();
     } catch(err) {}</script>
     <!-- END Google Analytics -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics (https://sullivanplate.com) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129573380-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-129573380-1');
+    </script>
   </head>
   <body<?php if ($PageTitle == "") echo " style=\"background: url(images/background.jpg)\";"; ?>>
 
     <div id="header-wrap">
       <header>
-        <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png?<?php echo filemtime('images/logo.png'); ?>" alt="KM Tooling" id="logo"></a>
+        <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png<?php if ($TopDir == "") echo "?".filemtime('images/logo.png'); ?>" alt="Sullivan Precision Plate" id="logo"></a>
 
         <div id="topmenu">
           <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="<?php echo $TopDir; ?>rfq.php">RFQ</a> | <a href="<?php echo $TopDir; ?>contact.php">SALES ENGINEER</a> | <a href="<?php echo $TopDir; ?>contact.php">CONTACT</a>
@@ -123,10 +133,10 @@ function email($address, $name="") {
       </div>
     </div>
     <?php } ?>
-    <?php if ($ServicesMenu != "") { ?>
+    <?php if (!empty($ServicesMenu)) { ?>
     <div id="services-menu">
       <?php include "menu.php"; ?>
     </div>
     <?php } ?>
 
-    <article<?php if ($FullWidth != "") echo " id=\"fullwidth\""; ?>>
+    <article<?php if (!empty($FullWidth)) echo " id=\"fullwidth\""; ?>>

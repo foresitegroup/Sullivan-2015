@@ -3,8 +3,8 @@ $PageTitle = "Services";
 $Banner = "sub-banner-grinding.jpg";
 $BannerText = "SERVICES ";
 $ServicesMenu = "yes";
-$Description = "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.";
-$Keywords = "grinding, flame cutting, stress relieving, steel shot blasting, largest grinding capabilities in the Midwest, Blanchard grinding, oxy-fuel cutting, high definition plasma, CNC flame cutting, metal stress relieving, machining, shot blasting, metal shot blasting, Sullivan corporation, Sullivan corp, Sullivan metals";
+$Description = "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Oxy-Fuel Cutting, High Definition Plasma Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.";
+$Keywords = "grinding, flame cutting, stress relieving, steel shot blasting, largest grinding capabilities in the Midwest, Blanchard grinding, oxy-fuel cutting, high definition plasma, CNC flame cutting, metal stress relieving, machining, shot blasting, metal shot blasting, Sullivan corporation, Sullivan corp, Sullivan metals, Oxy-Fuel Cutting";
 include "header.php";
 ?>
 
@@ -14,7 +14,7 @@ include "header.php";
   <strong>Forty-Five years of Plate Processing for the Metal Working Industry.</strong><br>
   <br>
 
-  Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.<br>
+  Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Oxy-Fuel Cutting, High Definition Plasma Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.<br>
   <br>
 
   With over 300 years of collective Artisan experience in steel plate processing, you can rely on our ability to process simple to complex steel plate components to your exact specification.<br>
@@ -30,7 +30,7 @@ include "header.php";
   <ul>
     <li>Steel Plate Inventory</li>
     <li>Blanchard Grinding from 36" to 224" cross corner</li>
-    <li>Flame-cutting</li>
+    <li>Oxy-Fuel Cutting</li>
     <li>High Definition Plasma Cutting</li>
     <li>Thermal Stress Relieving</li>
     <li>Steel Shot Blasting</li>
