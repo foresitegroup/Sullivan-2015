@@ -26,6 +26,7 @@ include "header.php";
     <li>2 1⁄4" - 4" +/- .093</li>
     <li>4 1⁄4" - 6" +/- .25</li>
     <li>6 1⁄4" - 12" +/- .375</li>
+    <li>On large crosssections, special tolerances will apply.</li>
   </ul>
   <br>
 
