@@ -46,18 +46,18 @@ include "header.php";
 </div>
 
 <div class="half-right">
-  <img src="images/oxy-fuel-cutting-1.jpg" alt="" class="right">
-  <img src="images/oxy-fuel-cutting-2.jpg" alt="" class="right">
+  <img src="images/oxy-fuel-cutting-1.jpg?20181203" alt="" class="right">
+  <img src="images/oxy-fuel-cutting-2.jpg?20181203" alt="" class="right">
 </div>
 
 <div style="clear: both;"></div>
 
 <hr class="fancy fancy-em">
 
-<a class="fancybox" rel="group" href="images/oxy-fuel-cutting-gall1.jpg" style="background: url(images/oxy-fuel-cutting-gall1.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/oxy-fuel-cutting-gall2.jpg" style="background: url(images/oxy-fuel-cutting-gall2.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/oxy-fuel-cutting-gall3.jpg" style="background: url(images/oxy-fuel-cutting-gall3.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox last" rel="group" href="images/oxy-fuel-cutting-gall4.jpg" style="background: url(images/oxy-fuel-cutting-gall4.jpg);"><img src="images/gallery-hover.png" alt=""></a>
+<a class="fancybox" rel="group" href="images/oxy-fuel-cutting-gall1.jpg" style="background: url(images/oxy-fuel-cutting-gall1.jpg?20181203);"><img src="images/gallery-hover.png" alt=""></a>
+<a class="fancybox" rel="group" href="images/oxy-fuel-cutting-gall2.jpg" style="background: url(images/oxy-fuel-cutting-gall2.jpg?20181203);"><img src="images/gallery-hover.png" alt=""></a>
+<a class="fancybox" rel="group" href="images/oxy-fuel-cutting-gall3.jpg" style="background: url(images/oxy-fuel-cutting-gall3.jpg?20181203);"><img src="images/gallery-hover.png" alt=""></a>
+<a class="fancybox last" rel="group" href="images/oxy-fuel-cutting-gall4.jpg" style="background: url(images/oxy-fuel-cutting-gall4.jpg?20181203);"><img src="images/gallery-hover.png" alt=""></a>
 <div style="clear: both;"></div>
 
 <?php include "footer.php"; ?>
