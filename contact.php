@@ -64,7 +64,7 @@ $salt = "ForesiteGroupSullivan";
       $Subject = "Comment From Sullivan Website";
       $From = "From: Contact Form <contactform@sullivanplate.com>\r\n";
       $From .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
-      $From .= "Bcc: mark@foresitegrp.com\r\n";
+      $From .= "Bcc: foresitegroupllc@gmail.com\r\n";
 
       $Message = "Comment from " . $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . " (" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . ")";
 

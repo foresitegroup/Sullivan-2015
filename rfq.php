@@ -68,7 +68,7 @@ if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
 
     $sm = Swift_Message::newInstance();
     $sm->setTo(array("gbohn@sullivanplate.com", "erauter@sullivanplate.com"));
-    $sm->setBcc(array("mark@foresitegrp.com"));
+    $sm->setBcc(array("foresitegroupllc@gmail.com"));
     $sm->setFrom(array("rfqform@sullivanplate.com" => "RFQ Form"));
     $sm->setReplyTo($_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])]);
     $sm->setSubject("RFQ From Sullivan Website");
