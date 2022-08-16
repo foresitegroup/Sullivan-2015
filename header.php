@@ -53,7 +53,7 @@ function email($address, $name="") {
     <script type="text/javascript">DD_belatedPNG.fix('img, .png');</script>
     <![endif]-->
 
-    <!-- BEGIN Google Analytics (http://thesullivancorp.com) -->
+    <!-- BEGIN Google Analytics (http://thesullivancorp.com) - THIS WILL STOP WORKING JULY 1, 2023 -->
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -65,13 +65,31 @@ function email($address, $name="") {
     } catch(err) {}</script>
     <!-- END Google Analytics -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics (https://sullivanplate.com) -->
+    <!-- Global site tag (gtag.js) - Google Analytics (https://sullivanplate.com) - THIS WILL STOP WORKING JULY 1, 2023 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129573380-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-129573380-1');
+    </script>
+
+    <!-- Google tag (gtag.js) - (https://sullivanplate.com) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-942MVYNJMM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-942MVYNJMM');
+    </script>
+
+    <!-- Google tag (gtag.js) - (http://www.thesullivancorp.com) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TKYMFLVWH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2TKYMFLVWH');
     </script>
   </head>
   <body<?php if ($PageTitle == "") echo " style=\"background: url(images/background.jpg)\";"; ?>>
