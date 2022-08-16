@@ -51,12 +51,12 @@ include "header.php";
 
   <strong>Our Blanchard Grinding Capacity Include</strong><br>
   <ul style="display: inline-block;">
-    <li>42" Blanchard Grinders: 150 HP, 30" Vertical</li>
+    <li>42" Blanchard Grinders: 150 HP, 24" Vertical</li>
     <li>60" Blanchard Grinders: 200 HP, 30" Vertical</li>
     <li>66" Blanchard Grinders: 200 HP, 36" Vertical</li>
     <li>100" Blanchard Grinders: 300 HP, 48" Vertical</li>
-    <li>120" Blanchard Grinders: 350 HP, 50" Vertical</li>
-    <li>224" Blanchard Grinder: 600 HP, 72" Vertical<br>The Largest Blanchard Grinder in the Nation</li>
+    <li>120" Blanchard Grinders: 350 HP, 48" Vertical</li>
+    <li>224" Blanchard Grinder: 600 HP, 48" Vertical<br>The Largest Blanchard Grinder in the Nation</li>
   </ul><br>
   <br>
 
