@@ -4,7 +4,7 @@
     <div id="spiffs">
       <article>
         <a href="<?php echo $TopDir; ?>grinding.php" class="spiff spiff-left">
-          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt=""></div>
+          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt="" width="226" height="144"></div>
           <div class="spiff-sep"></div>
           <h1>BLANCHARD GRINDING</h1>
           <div class="spiff-text">
@@ -14,7 +14,7 @@
         </a>
 
         <a href="<?php echo $TopDir; ?>stress-relieving.php" class="spiff spiff-mid">
-          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt=""></div>
+          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt="" width="226" height="144"></div>
           <div class="spiff-sep"></div>
           <h1>STRESS RELIEVING</h1>
           <div class="spiff-text">
@@ -24,7 +24,7 @@
         </a>
 
         <a href="<?php echo $TopDir; ?>oxy-fuel-cutting.php" class="spiff spiff-mid2">
-          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt=""></div>
+          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt="" width="226" height="144"></div>
           <div class="spiff-sep"></div>
           <h1>OXY-FUEL CUTTING</h1>
           <div class="spiff-text">
@@ -34,7 +34,7 @@
         </a>
 
         <a href="<?php echo $TopDir; ?>steel-shot-blasting.php" class="spiff spiff-right">
-          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt=""></div>
+          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt="" width="226" height="144"></div>
           <div class="spiff-sep"></div>
           <h1>SHOT BLASTING</h1>
           <div class="spiff-text">
@@ -70,7 +70,7 @@
     <div id="footer1">
       <footer>
         <div id="location">
-          <img src="<?php echo $TopDir; ?>images/logo-footer.png" alt="" id="logo-footer"><br>
+          <img src="<?php echo $TopDir; ?>images/logo-footer.webp" alt="" width="800" height="254" id="logo-footer"><br>
           <div id="loc-left">
             <strong>Sullivan Precision Plate</strong><br>
             460 Cardinal Lane<br>
@@ -100,9 +100,9 @@
           <!-- Begin MailChimp Signup Form -->
           <form action="//thesullivancorp.us12.list-manage.com/subscribe/post?u=25444b22e39cf774ae7efe4ea&amp;id=ca643ad173" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div>
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_25444b22e39cf774ae7efe4ea_ca643ad173" tabindex="-1" value=""></div>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="EMAIL SIGN UP">
-              <input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="button">
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_25444b22e39cf774ae7efe4ea_ca643ad173" tabindex="-1" value="" aria-label="ignore this"></div>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="EMAIL SIGN UP" aria-label="Email sign up">
+              <input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="button" aria-label="Submit">
               <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -113,12 +113,21 @@
         </div>
 
         <div id="copyright">
-          &copy; <?php echo date("Y"); ?> All rights reserved, Sullivan Precision Plate. Site by <a href="http://www.foresitegrp.com">Foresite Group</a>
+          &copy; <?php echo date("Y"); ?> All rights reserved, Sullivan Precision Plate. Site by <a href="https://foresitegrp.com">Foresite Group</a>
         </div>
 
         <div style="clear: both;"></div>
       </footer>
     </div>
+
+    <script>
+      // Open external links and PDFs in new tab
+      [...document.links].forEach(link => {
+        if (link.hostname != window.location.hostname || link.href.split('.').pop() == "pdf") {
+          link.target = '_blank'; link.rel = 'noopener';
+        }
+      });
+    </script>
     
   </body>
 </html>

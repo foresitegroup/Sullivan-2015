@@ -9,20 +9,17 @@ function email($address, $name="") {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Sullivan Precision Plate<?php if ($PageTitle != "") echo " | " . $PageTitle; ?></title>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $TopDir; ?>images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo $TopDir; ?>images/apple-touch-icon.png">
 
     <meta name="description" content="<?php echo (!empty($Description)) ? $Description : "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications."; ?>">
-    <meta name="keywords" content="<?php echo (!empty($Keywords)) ? $Keywords : "grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan Precision Plate, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing"; ?>">
-    <meta name="author" content="Foresite Group">
 
-    <meta name="viewport" content="width=device-width">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css?<?php if ($TopDir == "") echo filemtime('inc/main.css'); ?>">
@@ -36,42 +33,11 @@ function email($address, $name="") {
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("a[href^='http'], a[href$='.pdf']").not("[href*='" + window.location.host + "']").attr('target','_blank');
         $(".fancybox").fancybox();
         $("#datepicker1").datepicker();
         $("#datepicker2").datepicker();
         $("#datepicker3").datepicker();
       });
-    </script>
-
-    <!--[if lt IE 9]>
-    <script src="inc/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main-ie8.css">
-    <![endif]-->
-    <!--[if lt IE 7 ]>
-    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/dd_belatedpng.js"></script>
-    <script type="text/javascript">DD_belatedPNG.fix('img, .png');</script>
-    <![endif]-->
-
-    <!-- BEGIN Google Analytics (http://thesullivancorp.com) - THIS WILL STOP WORKING JULY 1, 2023 -->
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("UA-12449023-1");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
-    <!-- END Google Analytics -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics (https://sullivanplate.com) - THIS WILL STOP WORKING JULY 1, 2023 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129573380-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-129573380-1');
     </script>
 
     <!-- Google tag (gtag.js) - (https://sullivanplate.com) -->
@@ -92,21 +58,25 @@ function email($address, $name="") {
       gtag('config', 'G-2TKYMFLVWH');
     </script>
   </head>
-  <body<?php if ($PageTitle == "") echo " style=\"background: url(images/background.jpg)\";"; ?>>
+  <body<?php if ($PageTitle == "") echo " style=\"background: url(images/background.webp)\";"; ?>>
 
     <div id="header-wrap">
       <header>
-        <a href="<?php echo $TopDir; ?>."><img src="<?php echo $TopDir; ?>images/logo.png<?php if ($TopDir == "") echo "?".filemtime('images/logo.png'); ?>" alt="Sullivan Precision Plate" id="logo"></a>
+        <a href="<?php echo $TopDir; ?>." id="logo"><img src="<?php echo $TopDir; ?>images/logo.webp<?php if ($TopDir == "") echo "?".filemtime('images/logo.webp'); ?>" alt="Sullivan Precision Plate" width="800" height="331"></a>
 
-        <div id="topmenu">
-          <span class="phone"><i class="fa fa-phone"></i> 800-943-9511</span> <a href="<?php echo $TopDir; ?>rfq.php">RFQ</a> | <a href="<?php echo $TopDir; ?>contact.php">SALES ENGINEER</a> | <a href="<?php echo $TopDir; ?>contact.php">CONTACT</a>
-        </div>
-
-        <form class="search" method="POST" action="<?php echo $TopDir; ?>search.php">
-          <div>
-            <input type="text" name="search" placeholder="SEARCH"><button type="submit"><i class="fa fa-search"></i></button>
+        <div>
+          <div id="topmenu">
+            <a href="tel:8009439511" class="phone">800-943-9511</a>
+            <a href="<?php echo $TopDir; ?>rfq.php">RFQ</a> | <a href="<?php echo $TopDir; ?>contact.php">SALES ENGINEER</a> | <a href="<?php echo $TopDir; ?>contact.php">CONTACT</a>
           </div>
-        </form>
+
+          <form class="search" method="POST" action="<?php echo $TopDir; ?>search.php">
+            <div>
+              <input type="text" name="search" placeholder="SEARCH" aria-label="Search">
+              <button type="submit" aria-label="Submit search"></button>
+            </div>
+          </form>
+        </div>
       </header>
     </div>
 
