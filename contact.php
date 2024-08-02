@@ -1,9 +1,8 @@
 <?php
 $PageTitle = "Contact Us";
-$Banner = "sub-banner-sales.jpg";
-$BannerText = "CONTACT US";
+$Banner = "sub-banner-sales.webp";
+$BannerText = "Contact Us";
 $Description = "Drop us a line! Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.";
-$Keywords = "contact Sullivan corp, contact Sullivan corporation, contact Sullivan metals, request a quote, request more information, grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing";
 include "header.php";
 
 // Settings for randomizing the field names
@@ -12,160 +11,128 @@ $timestamp = time();
 $salt = "ForesiteGroupSullivan";
 ?>
 
-<h3>SALES CONTACT</h3>
+<h2>Sales Contact</h2>
 
-<div class="half-left">
-  With over 300 years of combined craftsman experience we know how to get your metal processing completed precisely, on time - while saving you money.<br>
-  <br>
+<div class="two-col">
+  <div>
+    With over 300 years of combined craftsman experience we know how to get your metal processing completed precisely, on time - while saving you money.<br>
+    <br>
 
-  As a customer your point of contact is a member of the Sullivan Sales Engineering Team. Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.<br>
-  <br>
+    As a customer your point of contact is a member of the Sullivan Sales Engineering Team. Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.<br>
+    <br>
 
-  Your Sales Engineer is available to provide quotations, product availability, and technical assistance for your project.<br>
-  <br>
+    Your Sales Engineer is available to provide quotations, product availability, and technical assistance for your project.<br>
+    <br>
 
-  Call us at <strong>262-369-7200</strong> or Toll Free <strong>800-943-9511</strong>.
+    Call us at <strong>262-369-7200</strong> or Toll Free <strong>800-943-9511</strong>.
+  </div>
+
+  <div>
+    <strong>Gerry Bohn</strong> - Manager of Sales<br>
+    Phone 262-369-7200<br>
+    Toll Free 800-943-9511<br>
+    Email <?php email("gbohn@sullivanplate.com"); ?><br>
+    <br>
+
+    <strong>Ed Rauter</strong><br>
+    Phone 262-369-7200<br>
+    Toll Free 800-943-9511<br>
+    Email <?php email("erauter@sullivanplate.com"); ?><br>
+    <br>
+
+    <strong>Sullivan Precision Plate</strong><br>
+    460 Cardinal Lane<br>
+    Hartland, Wisconsin 53029
+  </div>
 </div>
 
-<div class="half-right">
-  <strong>Gerry Bohn</strong> - Manager of Sales<br>
-  Phone 262-369-7200<br>
-  Toll Free 800-943-9511<br>
-  Email <?php email("gbohn@sullivanplate.com"); ?><br>
-  <br>
+<div class="hr"></div>
 
-  <strong>Ed Rauter</strong><br>
-  Phone 262-369-7200<br>
-  Toll Free 800-943-9511<br>
-  Email <?php email("erauter@sullivanplate.com"); ?><br>
-  <br>
+<h2>General Inquiry</h2>
 
-  <strong>Sullivan Precision Plate</strong><br>
-  460 Cardinal Lane<br>
-  Hartland, Wisconsin 53029<br>
-</div>
+<div class="two-col">
+  <div>
+    Please fill in the fields below to be contacted. Required fields include *<br>
+    <br>
 
-<div style="clear: both;"></div>
+    <form action="form-contact.php" method="POST" id="contact" class="form" novalidate>
+      <div>
+        <input type="text" name="username" tabindex="-1" aria-hidden="true" autocomplete="new-password">
 
-<hr class="fancy fancy-em">
+        <label>
+          Name *
+          <input type="text" name="<?php echo md5("name".$ip.$salt.$timestamp); ?>" required>
+        </label>
 
-<h3>GENERAL INQUIRY</h3>
+        <label>
+          Company
+          <input type="text" name="<?php echo md5("company".$ip.$salt.$timestamp); ?>">
+        </label>
 
-<div class="half-left">
-  <?php
-  if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
-    if (
-          $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-          $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-          $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
-        ) {
-      // All required fields have been filled, so construct the message
-      $SendTo = "gbohn@sullivanplate.com, erauter@sullivanplate.com";
-      $Subject = "Comment From Sullivan Website";
-      $From = "From: Contact Form <contactform@sullivanplate.com>\r\n";
-      $From .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
-      $From .= "Bcc: foresitegroupllc@gmail.com\r\n";
+        <label>
+          Phone *
+          <input type="tel" name="<?php echo md5("phone".$ip.$salt.$timestamp); ?>" required>
+        </label>
 
-      $Message = "Comment from " . $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . " (" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . ")";
+        <label>
+          Email *
+          <input type="email" name="<?php echo md5("email".$ip.$salt.$timestamp); ?>" required>
+        </label>
 
-      if (!empty($_POST[md5('company' . $_POST['ip'] . $salt . $_POST['timestamp'])])) $Message .= "\n" . $_POST[md5('company' . $_POST['ip'] . $salt . $_POST['timestamp'])];
+        <label>
+          Comment
+          <textarea name="<?php echo md5("comment".$ip.$salt.$timestamp); ?>"></textarea>
+        </label>
 
-      $Message .= "\n" . $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])];
+        <div class="radio">
+          <strong>Best to contact me via</strong><br>
+          <input type="radio" name="contact" value="Phone" id="phone-r">
+          <label for="phone-r">Phone</label>
 
-      if (!empty($_POST['contact'])) $Message .= "\nBest to contact me via " . $_POST['contact'];
+          <input type="radio" name="contact" value="Email" id="email-r">
+          <label for="email-r">Email</label>
+        </div>
 
-      $Message .= "\n\n";
+        <input type="hidden" name="ip" value="<?php echo $ip; ?>">
+        <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
 
-      if (!empty($_POST[md5('comment' . $_POST['ip'] . $salt . $_POST['timestamp'])])) $Message .= $_POST[md5('comment' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-
-      $Message = stripslashes($Message);
-
-      mail($SendTo, $Subject, $Message, $From);
-
-      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Precision Plate.  You will be contacted shortly.";
-    } else {
-      echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
-    }
-  } else {
-  ?>
-  <script type="text/javascript">
-    function checkform (form) {
-      if (document.getElementById('name').value == "") { alert('Name required.'); document.getElementById('name').focus(); return false ; }
-      if (document.getElementById('phone').value == "") { alert('Phone required.'); document.getElementById('phone').focus(); return false ; }
-      if (document.getElementById('email').value == "") { alert('Email required.'); document.getElementById('email').focus(); return false ; }
-      return true ;
-    }
-  </script>
-
-  Please fill in the fields below to be contacted. Required fields include *<br>
-  <br>
-
-  <form action="contact.php" method="POST" onSubmit="return checkform(this)" id="contact">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" name="<?php echo md5("name" . $ip . $salt . $timestamp); ?>" id="name" placeholder="NAME *"><br>
-      <br>
-
-      <label for="company">Company</label>
-      <input type="text" name="<?php echo md5("company" . $ip . $salt . $timestamp); ?>" id="company" placeholder="COMPANY"><br>
-      <br>
-
-      <label for="phone">Phone</label>
-      <input type="text" name="<?php echo md5("phone" . $ip . $salt . $timestamp); ?>" id="phone" placeholder="PHONE *"><br>
-      <br>
-
-      <label for="email">Email</label>
-      <input type="text" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="EMAIL *"><br>
-      <br>
-
-      <label for="comment">Comment</label>
-      <textarea name="<?php echo md5("comment" . $ip . $salt . $timestamp); ?>" id="comment" placeholder="COMMENT"></textarea><br>
-      <br>
-
-      <div class="radio">
-        <strong>Best to contact me via</strong><br>
-        <input type="radio" name="contact" value="Phone" id="phone-r"> <label for="phone-r">Phone</label>
-        <input type="radio" name="contact" value="Email" id="email-r"> <label for="email-r">Email</label>
+        <button type="submit" name="submit" id="submit">Submit</button>
       </div>
-      <br>
+    </form>
+  </div>
 
-      <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
+  <div>
+    <h3>Mailing</h3>
+    <strong>Sullivan Precision Plate</strong><br>
+    460 Cardinal Lane<br>
+    Hartland, Wisconsin 53029<br>
+    <br>
 
-      <input type="hidden" name="ip" value="<?php echo $ip; ?>">
-      <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
+    Phone 262-369-7200<br>
+    Fax 262-369-7219<br>
+    <br>
+    <br>
 
-      <button type="submit" name="submit">SUBMIT</button>
-    </div>
-  </form>
-  <?php } ?>
+    <h3>Headquarters/Dock/Delivery<br>Hartland, WI</h3>
+    <strong>Sullivan Precision Plate</strong><br>
+    460 Cardinal Lane<br>
+    Hartland, Wisconsin 53029<br>
+    <br>
+    <br>
+
+    <h3>Dock/Delivery<br>Port of Milwaukee, WI</h3>
+    <strong>Sullivan Precision Plate</strong><br>
+    2050 S Aldrich St<br>
+    Milwaukee, Wisconsin 53204
+  </div>
 </div>
 
-<div class="half-right">
-  <h4>MAILING</h4>
-  <strong>Sullivan Precision Plate</strong><br>
-  460 Cardinal Lane<br>
-  Hartland, Wisconsin 53029<br>
-  <br>
-
-  Phone 262-369-7200<br>
-  Fax 262-369-7219<br>
-  <br>
-  <br>
-
-  <h4>HEADQUARTERS/DOCK/DELIVERY<br>HARTLAND, WI</h4>
-  <strong>Sullivan Precision Plate</strong><br>
-  460 Cardinal Lane<br>
-  Hartland, Wisconsin 53029<br>
-  <br>
-  <br>
-
-  <h4>DOCK/DELIVERY<br>PORT OF MILWAUKEE, WI</h4>
-  <strong>Sullivan Precision Plate</strong><br>
-  2050 S Aldrich St<br>
-  Milwaukee, Wisconsin 53204
+<div id="modal">
+  <div id="modal-box">
+    <div id="modal-button"></div>
+    <div id="modal-content"></div>
+  </div>
 </div>
-
-<div style="clear: both;"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTbHAsLFN-nVXXIDAZiynPZT1DfoDyNwE"></script>
 <script>
@@ -208,7 +175,7 @@ $salt = "ForesiteGroupSullivan";
     var marker = new google.maps.Marker({
       position: MyLatLng,
       map: map,
-      icon: 'images/map-pin.png'
+      icon: 'images/map-pin.webp'
     });
 
     var infowindow = new google.maps.InfoWindow({
@@ -226,6 +193,65 @@ $salt = "ForesiteGroupSullivan";
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
+
+  // BEGIN form submit
+  const form = document.getElementById('contact');
+  form.addEventListener('submit', submitForm);
+
+  function submitForm(event) {
+    event.preventDefault();
+
+    // Validate any fields with "required" selector
+    var valid = 'yes';
+
+    for (const el of form.querySelectorAll('[required]')) {
+      if (!el.checkValidity()) {
+        document.getElementsByName(el.name).forEach(function (input) {
+          input.classList.add('alert');
+          input.placeholder = 'REQUIRED';
+        });
+
+        valid = 'no';
+      }
+    }
+
+    // If fields are valid, send the data
+    if (valid == 'yes') {
+      document.getElementById("submit").classList.add("loader");
+
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data
+      })
+      .then((response) => response.text())
+      .then((result) => {
+        // Data sent, so display success message in modal
+        // and clear all the form fields
+        document.getElementById('modal-content').innerHTML = result;
+        modal.style.display = "block";
+        form.reset();
+        
+        // Clear alerts
+        document.querySelectorAll('.alert').forEach(function (alert) {
+          alert.classList.remove('alert');
+          alert.placeholder = '';
+        });
+
+        document.getElementById("submit").classList.remove("loader");
+      });
+    }
+  } // END rsubmitForm
+
+  const modal = document.getElementById("modal");
+  const modalbutton = document.getElementById("modal-button");
+
+  window.onclick = function(event) {
+    if (event.target == modal) modal.style.display = "none";
+  }
+
+  modalbutton.onclick = function() { modal.style.display = "none"; }
 </script>
 
 <?php $Map = "yes"; include "footer.php"; ?>

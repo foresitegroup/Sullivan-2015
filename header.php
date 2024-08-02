@@ -7,6 +7,8 @@ function email($address, $name="") {
   if ($name == "") $name = $email;
   echo "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;$email\">$name</a>";
 }
+
+$Description = (!empty($Description)) ? $Description : "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications.";
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -18,27 +20,17 @@ function email($address, $name="") {
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $TopDir; ?>images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo $TopDir; ?>images/apple-touch-icon.png">
 
-    <meta name="description" content="<?php echo (!empty($Description)) ? $Description : "Sullivan Precision Plate is a Metal Service Center that specializes in Steel Plate. Sullivan offers Steel Plate, Flame-Cutting, High Definition Plasma-Cutting, Thermal Stress Relieving and Shot Blasting delivered on-time, on budget, of the highest quality, and to your specifications."; ?>">
+    <meta name="description" content="<?php echo $Description; ?>">
 
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/main.css?<?php if ($TopDir == "") echo filemtime('inc/main.css'); ?>">
 
-    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/bootstrap-collapse.js"></script>
-    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/jquery.cycle2.min.js"></script>
-    <link rel="stylesheet" href="<?php echo $TopDir; ?>inc/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="<?php echo $TopDir; ?>inc/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".fancybox").fancybox();
-        $("#datepicker1").datepicker();
-        $("#datepicker2").datepicker();
-        $("#datepicker3").datepicker();
-      });
-    </script>
+    <meta property="og:title" content="Sullivan Precision Plate<?php if ($PageTitle != "") echo " | " . $PageTitle; ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sullivanplate.com/images/logo-social.webp">
+    <meta property="og:logo" content="https://sullivanplate.com/images/logo.webp">
+    <meta property="og:url" content="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
+    <meta property="og:description" content="<?php echo $Description; ?>">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Google tag (gtag.js) - (https://sullivanplate.com) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-942MVYNJMM"></script>
@@ -58,16 +50,19 @@ function email($address, $name="") {
       gtag('config', 'G-2TKYMFLVWH');
     </script>
   </head>
-  <body<?php if ($PageTitle == "") echo " style=\"background: url(images/background.webp)\";"; ?>>
+  <body>
 
-    <div id="header-wrap">
-      <header>
-        <a href="<?php echo $TopDir; ?>." id="logo"><img src="<?php echo $TopDir; ?>images/logo.webp<?php if ($TopDir == "") echo "?".filemtime('images/logo.webp'); ?>" alt="Sullivan Precision Plate" width="800" height="331"></a>
+    <header>
+      <div class="site-width">
+        <a href="<?php echo $TopDir; ?>." id="logo" aria-label="Sullivan Precision Plate"></a>
 
-        <div>
+        <div id="not-logo">
           <div id="topmenu">
             <a href="tel:8009439511" class="phone">800-943-9511</a>
-            <a href="<?php echo $TopDir; ?>rfq.php">RFQ</a> | <a href="<?php echo $TopDir; ?>contact.php">SALES ENGINEER</a> | <a href="<?php echo $TopDir; ?>contact.php">CONTACT</a>
+            
+            <div class="tm">
+              <a href="<?php echo $TopDir; ?>rfq.php">RFQ</a> | <a href="<?php echo $TopDir; ?>contact.php">SALES ENGINEER</a> | <a href="<?php echo $TopDir; ?>contact.php">CONTACT</a>
+            </div>
           </div>
 
           <form class="search" method="POST" action="<?php echo $TopDir; ?>search.php">
@@ -76,55 +71,69 @@ function email($address, $name="") {
               <button type="submit" aria-label="Submit search"></button>
             </div>
           </form>
-        </div>
-      </header>
-    </div>
+        </div> <!-- /#not-logo -->
+      </div> <!-- ./site-width -->
 
-    <a id="menu-toggle" data-toggle="collapse" data-target="#menu" class="fa fa-bars"></a>
+      <input type="checkbox" id="toggle-menu" role="button">
+      <label for="toggle-menu"><div></div></label>
 
-    <nav id="menu" class="collapse">
-      <?php include "menu.php"; ?>
-    </nav>
+      <nav id="menu">
+        <?php include "menu.php"; ?>
+      </nav>
+    </header>
 
     <?php if ($PageTitle == "") { ?>
-    <div class="cycle-slideshow" data-cycle-slides="> div" data-cycle-timeout="8000">
-      <p class="cycle-pager"></p>
-      <div style="background: url(images/home-banner3.jpg) top center no-repeat;">
-        <div>
-          <h1>OVER 300 YEARS</h1>
+    <div id="hero">
+      <div class="f-carousel__slide" style="background: url(images/home-banner3.webp) top center no-repeat;">
+        <div class="site-width">
+          <h1>Over 300 Years</h1>
           Of combined operator experience. All orders are processed by our team of skilled craftsmen.<br>
           <br>
-          <a href="services.php">READ MORE</a>
+          <a href="services.php" class="button">Read More</a>
         </div>
       </div>
-      <div style="background: url(images/home-banner1.jpg) top center no-repeat;">
-        <div>
-          <h1>LARGEST GRINDING CAPABILITIES IN THE MIDWEST</h1>
+      <div class="f-carousel__slide" style="background: url(images/home-banner1.webp) top center no-repeat;">
+        <div class="site-width">
+          <h1>Largest Grinding Capabilities In The Midwest</h1>
           Sullivan Precision Plate has been serving the grinding industry for over 45 years.<br>
           <br>
-          <a href="grinding.php">READ MORE</a>
+          <a href="grinding.php" class="button">Read More</a>
         </div>
       </div>
-      <div style="background: url(images/home-banner-request.jpg) top center no-repeat;">
-        <div>
-          <h1>REQUEST A QUOTE</h1>
+      <div class="f-carousel__slide" style="background: url(images/home-banner-request.webp) top center no-repeat;">
+        <div class="site-width">
+          <h1>Request A Quote</h1>
           With insight and engineering talent, our sales engineers are available to provide quotations, product availability and technical assistance for your project.<br>
           <br>
-          <a href="rfq.php">READ MORE</a>
+          <a href="rfq.php" class="button">Read More</a>
         </div>
       </div>
     </div>
-    <?php } else { ?>
-    <div id="sub-banner"<?php if ($Banner != "") echo " style=\"background-image: url(<?php echo $TopDir; ?>images/" . $Banner . ");\""; ?>>
-      <div>
-        <?php echo $BannerText; ?>
-      </div>
-    </div>
-    <?php } ?>
-    <?php if (!empty($ServicesMenu)) { ?>
-    <div id="services-menu">
-      <?php include "menu.php"; ?>
-    </div>
-    <?php } ?>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css">
+    <script>
+      new Carousel(document.getElementById('hero'), {
+        Autoplay: { timeout: 8000, showProgress: false, transition: "crossfade" },
+        Panzoom: { touch: false }, Dots: { minCount: 2 }, Navigation: false },
+        { Autoplay });
+    </script>
+    <?php
+    } else {
+      echo '<div id="sub-banner"';
+      if ($Banner != "") echo ' style="background-image: url('.$TopDir.'images/'.$Banner.')"';
+      echo ">\n";
+        echo '<h1 class="site-width">'.$BannerText."</h1>\n";
+      echo "</div>\n";
+    }
 
-    <article<?php if (!empty($FullWidth)) echo " id=\"fullwidth\""; ?>>
+    if (!empty($ServicesMenu)) {
+      echo '<div id="services-menu">'."\n";
+        include "menu.php";
+      echo "</div>\n";
+    }
+    ?>
+
+    <div class="content site-width<?php if (!empty($FullWidth)) echo ' fullwidth'; ?>">

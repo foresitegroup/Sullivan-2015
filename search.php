@@ -1,23 +1,33 @@
 <?php
 $PageTitle = ($_POST['search'] != "") ? "Search Results for \"" . $_POST['search'] . "\"" : "Search";
+$Banner = "";
 $BannerText = strtoupper($PageTitle);
 $PlaceHolder = ($_POST['search'] != "") ? "SEARCH AGAIN" : "SEARCH";
 include "header.php";
 ?>
 
-<h3><?php echo $BannerText; ?></h3>
+<h2><?php echo $BannerText; ?></h2>
 
 <?php
 if ($_POST['search'] != "") {
+  $excluded = array("search.php", "header.php", "footer.php", "menu.php", "404.php");
+  $files = [];
+
   $dir = opendir(".");
   while (false != ($file = readdir($dir))) {
-    if ((substr(strrchr($file, "."), 1) == "php") && ($file != "header.php") && ($file != "footer.php") && ($file != "search.php") && ($file != "menu.php")) {
-      $files[] = $file;
+    if (substr(strrchr($file, "."), 1) == "php") {
+      if (!in_array($file, $excluded)) $files[] = $file;
     }
   }
   closedir($dir);
+  
+  // Remove any files starting with "form-"
+  $files = preg_grep('~form-~i', $files, PREG_GREP_INVERT);
+
   natcasesort($files);
   
+  $sresults = "no";
+
   foreach ($files as $file) {
     $contents = file_get_contents($file);
     
@@ -30,9 +40,10 @@ if ($_POST['search'] != "") {
       
       // Set variable to display page title or file name if no title
       $stitle = ($matches[1] != "") ? $matches[1] : $file;
+      if ($stitle == "index.php") $stitle = "Home";
       
       // Display the results
-      echo "<a href=\"$file\">$stitle</a><br>\n";
+      echo "<a href=\"$file\"><h3>$stitle</h3></a>\n";
       
       // Get position of search term to create a result snippet
       $pos = stripos(trim(strip_tags($contents)), $_POST['search']);
@@ -49,7 +60,7 @@ if ($_POST['search'] != "") {
   
   // If nothing is found, man up and apologize.
   if ($sresults != "yes") {
-    echo "<div style=\"text-align: center; font-weight: bold;\">Sorry, no results for \"" . $_POST['search'] . "\".</div>\n";
+    echo "<h3>Sorry, no results for \"" . $_POST['search'] . "\".</h3><br>\n";
   } else {
     echo "<br>\n";
   }
@@ -58,7 +69,8 @@ if ($_POST['search'] != "") {
 
 <form class="search searchpage" method="POST" action="search.php">
   <div>
-    <input type="text" name="search" placeholder="<?php echo $PlaceHolder; ?>"><button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" name="search" placeholder="<?php echo $PlaceHolder; ?>" aria-label="Search">
+    <button type="submit" aria-label="Submit search"></button>
   </div>
 </form>
 

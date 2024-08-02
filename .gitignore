@@ -47,5 +47,7 @@ news/*
 news/wp-content/*
 !news/wp-content/themes/
 news/wp-content/themes/*
-!news/wp-content/themes/sullivan
-inc/swiftmailer
+!news/wp-content/themes/sullivan-plate
+inc/fintoozler.php
+/inc/PHPMailer
+robots.txt

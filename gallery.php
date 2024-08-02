@@ -1,44 +1,28 @@
 <?php
 $PageTitle = "Gallery";
 $Banner = "";
-$BannerText = "GALLERY";
-$Description = "This is the image gallery for Sullivan Corporation. Here you'll find images of our grinders, flame cutters and more. Take a look! ";
-$Keywords = "grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing";
+$BannerText = "Gallery";
+$Description = "This is the image gallery for Sullivan Precision Plate. Here you'll find images of our grinders, flame cutters and more. Take a look! ";
 include "header.php";
 ?>
 
-<h3>GALLERY</h3>
+<h2>Gallery</h2>
 
-<a class="fancybox" rel="group" href="images/gallery/fgall01.jpg" style="background: url(images/gallery/fgall01.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/fgall02.jpg" style="background: url(images/gallery/fgall02.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/fgall03.jpg" style="background: url(images/gallery/fgall03.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox last" rel="group" href="images/gallery/fgall04.jpg" style="background: url(images/gallery/fgall04.jpg);"><img src="images/gallery-hover.png" alt=""></a>
+<div class="gallery">
+  <?php
+  $count = 1;
+  $images = glob("images/gallery/*.webp");
+  foreach($images as $image) {
+    echo '<a href="'.$image.'" data-fancybox="gallery" style="background: url('.$image.');" aria-label="Gallery '.$count.'"></a>'."\n";
+    $count++;
+  }
+  ?>
+</div>
 
-<a class="fancybox" rel="group" href="images/gallery/gall01.jpg" style="background: url(images/gallery/gall01.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall02.jpg" style="background: url(images/gallery/gall02.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall03.jpg" style="background: url(images/gallery/gall03.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox last" rel="group" href="images/gallery/gall04.jpg" style="background: url(images/gallery/gall04.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-
-<a class="fancybox" rel="group" href="images/gallery/gall05.jpg" style="background: url(images/gallery/gall05.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall06.jpg" style="background: url(images/gallery/gall06.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall07.jpg" style="background: url(images/gallery/gall07.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox last" rel="group" href="images/gallery/gall08.jpg" style="background: url(images/gallery/gall08.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-
-<a class="fancybox" rel="group" href="images/gallery/gall09.jpg" style="background: url(images/gallery/gall09.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall10.jpg" style="background: url(images/gallery/gall10.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall11.jpg" style="background: url(images/gallery/gall11.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox last" rel="group" href="images/gallery/gall12.jpg" style="background: url(images/gallery/gall12.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-
-<a class="fancybox" rel="group" href="images/gallery/gall13.jpg" style="background: url(images/gallery/gall13.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall14.jpg" style="background: url(images/gallery/gall14.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall15.jpg" style="background: url(images/gallery/gall15.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox last" rel="group" href="images/gallery/gall16.jpg" style="background: url(images/gallery/gall16.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-
-<a class="fancybox" rel="group" href="images/gallery/gall17.jpg" style="background: url(images/gallery/gall17.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall18.jpg" style="background: url(images/gallery/gall18.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox" rel="group" href="images/gallery/gall19.jpg" style="background: url(images/gallery/gall19.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-<a class="fancybox last" rel="group" href="images/gallery/gall20.jpg" style="background: url(images/gallery/gall20.jpg);"><img src="images/gallery-hover.png" alt=""></a>
-
-<div style="clear: both;"></div>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+<script>
+  Fancybox.bind('[data-fancybox]', { closeButton: true, Toolbar: { enabled: false } });
+</script>
 
 <?php include "footer.php"; ?>

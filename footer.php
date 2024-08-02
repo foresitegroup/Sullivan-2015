@@ -1,50 +1,40 @@
-    </article>
+    </div>
     
     <?php if ($PageTitle == "") { ?>
     <div id="spiffs">
-      <article>
-        <a href="<?php echo $TopDir; ?>grinding.php" class="spiff spiff-left">
-          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt="" width="226" height="144"></div>
-          <div class="spiff-sep"></div>
-          <h1>BLANCHARD GRINDING</h1>
-          <div class="spiff-text">
-            Sullivan Precision Plate has a grinder to meet almost every need. Grinding is where we have made our name, expanding on our services to meet the diverse needs of our customers &amp; an ever-changing economy.
-          </div>
-          <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
+      <div class="site-width">
+        <a href="<?php echo $TopDir; ?>grinding.php" aria-label="Blanchard Grinding">
+          <div class="image" style="background-image: url(<?php echo $TopDir; ?>images/grinding2.webp);"></div>
+          <div class="sep"></div>
+          <h3>Blanchard Grinding</h3>
+          Sullivan Precision Plate has a grinder to meet almost every need. Grinding is where we have made our name, expanding on our services to meet the diverse needs of our customers &amp; an ever-changing economy.
+          <div class="more">More</div>
         </a>
 
-        <a href="<?php echo $TopDir; ?>stress-relieving.php" class="spiff spiff-mid">
-          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt="" width="226" height="144"></div>
-          <div class="spiff-sep"></div>
-          <h1>STRESS RELIEVING</h1>
-          <div class="spiff-text">
-            Thermal Stress Relieving is an annealing process that heats the metal below the austenite phase to reduce distortions or changes in dimensions that might occur after shaping.
-          </div>
-          <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
+        <a href="<?php echo $TopDir; ?>stress-relieving.php" aria-label="Stress Relieving">
+          <div class="image" style="background-image: url(<?php echo $TopDir; ?>images/stress-relieving3.webp);"></div>
+          <div class="sep"></div>
+          <h3>Stress Relieving</h3>
+          Thermal Stress Relieving is an annealing process that heats the metal below the austenite phase to reduce distortions or changes in dimensions that might occur after shaping.
+          <div class="more">More</div>
         </a>
 
-        <a href="<?php echo $TopDir; ?>oxy-fuel-cutting.php" class="spiff spiff-mid2">
-          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt="" width="226" height="144"></div>
-          <div class="spiff-sep"></div>
-          <h1>OXY-FUEL CUTTING</h1>
-          <div class="spiff-text">
-            Oxy-Fuel Cutting will produce products that range from simple rectangles, circles, and rings, to intricate shapes custom-cut to specification.
-          </div>
-          <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
+        <a href="<?php echo $TopDir; ?>oxy-fuel-cutting.php" aria-label="Oxy-Fuel Cutting">
+          <div class="image" style="background-image: url(<?php echo $TopDir; ?>images/oxy-fuel-cutting-2.webp);"></div>
+          <div class="sep"></div>
+          <h3>Oxy-Fuel Cutting</h3>
+          Oxy-Fuel Cutting will produce products that range from simple rectangles, circles, and rings, to intricate shapes custom-cut to specification.<br><br>
+          <div class="more">More</div>
         </a>
 
-        <a href="<?php echo $TopDir; ?>steel-shot-blasting.php" class="spiff spiff-right">
-          <div class="spiff-img"><img src="<?php echo $TopDir; ?>images/spiff-hover.png" alt="" width="226" height="144"></div>
-          <div class="spiff-sep"></div>
-          <h1>SHOT BLASTING</h1>
-          <div class="spiff-text">
-            Shot Blasting is the operation of cleaning or preparing a surface by forcibly propelling a stream of abrasive material against it under high pressure.
-          </div>
-          <div class="readmore">MORE <div class="fa fa-angle-double-right"></div></div>
+        <a href="<?php echo $TopDir; ?>steel-shot-blasting.php" aria-label="Shot Blasting">
+          <div class="image" style="background-image: url(<?php echo $TopDir; ?>images/spiff-shot-blasting.webp);"></div>
+          <div class="sep"></div>
+          <h3>Shot Blasting</h3>
+          Shot Blasting is the operation of cleaning or preparing a surface by forcibly propelling a stream of abrasive material against it under high pressure.<br><br>
+          <div class="more">More</div>
         </a>
-
-        <div style="clear: both;"></div>
-      </article>
+      </div>
     </div>
     <?php } ?>
 
@@ -54,71 +44,65 @@
     
     <?php if (empty($Inventory)) { ?>
     <div id="inventory">
-      <article>
-        <div>
-          We carry and sell multiple types of steel in a wide variety of sizes.<br>
-          <em>Ask about our inventory today!</em>
-        </div>
-      </article>
+      <div class="site-width">
+        We carry and sell multiple types of steel in a wide variety of sizes.<br>
+        <em>Ask about our inventory today!</em>
+      </div>
     </div>
     <?php } ?>
 
-    <article id="callus">
-      CALL US: <span>800-943-9511</span>
-    </article>
+    <div id="callus">
+      Call Us: <span>800-943-9511</span>
+    </div>
 
-    <div id="footer1">
-      <footer>
-        <div id="location">
-          <img src="<?php echo $TopDir; ?>images/logo-footer.webp" alt="" width="800" height="254" id="logo-footer"><br>
-          <div id="loc-left">
+    <footer>
+      <div class="site-width">
+        <div class="contact">
+          <img src="<?php echo $TopDir; ?>images/logo-footer.webp" alt="" width="800" height="254" id="logo-footer">
+
+          <div>
             <strong>Sullivan Precision Plate</strong><br>
             460 Cardinal Lane<br>
             Hartland, Wisconsin 53029
           </div>
-          
-          <div id="loc-right">
-            <strong style="color: #72A536;">P:</strong> (262) 369-7200<br>
-            <strong style="color: #72A536;">F:</strong> (262) 369-7219<br>
-            <strong style="color: #72A536;">E:</strong> <?php email("sales@sullivanplate.com"); ?>
+
+          <div>
+            <strong>P:</strong> (262) 369-7200<br>
+            <strong>F:</strong> (262) 369-7219<br>
+            <strong>E:</strong> <?php email("sales@sullivanplate.com"); ?>
           </div>
+        </div> <!-- /.contact -->
 
-          <div style="clear: both;"></div>
-        </div>
-
-        <div id="footer-menu">
+        <nav class="menu">
           <?php include "menu.php"; ?>
-        </div>
+        </nav>
+      </div>
 
-        <div style="clear: both;"></div>
-      </footer>
-    </div>
-    
-    <div id="footer2">
-      <footer>
-        <div id="emailsignup">
-          <!-- Begin MailChimp Signup Form -->
-          <form action="//thesullivancorp.us12.list-manage.com/subscribe/post?u=25444b22e39cf774ae7efe4ea&amp;id=ca643ad173" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div>
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_25444b22e39cf774ae7efe4ea_ca643ad173" tabindex="-1" value="" aria-label="ignore this"></div>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="EMAIL SIGN UP" aria-label="Email sign up">
-              <input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="button" aria-label="Submit">
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
+      <div class="ribbon">
+        <div class="site-width">
+          <form action="thesullivancorp.us12.list-manage.com/subscribe/post?u=25444b22e39cf774ae7efe4ea&amp;id=ca643ad173" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_new" novalidate="">
+            <div id="mc_embed_signup_scroll">
+              <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
               </div>
-            </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                <input type="text" name="b_671dea5290aeac86e3c5b4dd8_d638171195" tabindex="-1" value="">
+              </div>
+              <div class="buttongroup">
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="EMAIL SIGN UP" aria-label="Email sign up">
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Submit" aria-label="Submit">
+              </div> <!-- /.buttongroup -->
+            </div> <!-- /#mc_embed_signup_scroll -->
           </form>
-          <!--End mc_embed_signup-->
-        </div>
 
-        <div id="copyright">
-          &copy; <?php echo date("Y"); ?> All rights reserved, Sullivan Precision Plate. Site by <a href="https://foresitegrp.com">Foresite Group</a>
+          <div>
+            &copy; <?php echo date("Y"); ?> All rights reserved, Sullivan Precision Plate. Site by <a href="https://foresitegrp.com" style="text-decoration: underline;">Foresite Group</a>
+          </div>
         </div>
-
-        <div style="clear: both;"></div>
-      </footer>
-    </div>
+      </div> <!-- /.ribbon -->
+    </footer>
 
     <script>
       // Open external links and PDFs in new tab

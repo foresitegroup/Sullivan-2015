@@ -1,9 +1,8 @@
 <?php
 $PageTitle = "Request More Information";
-$Banner = "sub-banner-sales.jpg";
+$Banner = "sub-banner-sales.webp";
 $BannerText = "CONTACT US / <strong>REQUEST MORE INFORMATION</strong>";
 $Description = "Drop us a line! Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.";
-$Keywords = "contact Sullivan corp, contact Sullivan corporation, contact Sullivan metals, request a quote, request more information, grinding, plate grinding, metal grinding, flame cutting, plasma cutting, stress relieving, steel shot blasting, Blanchard grinding, metal working industry, metal service center, high definition plasma cutting, Sullivan corporation, Sullivan corp, Sullivan metals, plate processing, carbon steel, stainless steel, Wisconsin manufacturing";
 include "header.php";
 
 // Settings for randomizing the field names
@@ -12,132 +11,157 @@ $timestamp = time();
 $salt = "ForesiteGroupSullivan";
 ?>
 
-<h3>REQUEST MORE INFORMATION</h3>
+<h2>Request More Information</h2>
 
-<div class="half-left">
-  <?php
-  if (isset($_POST['submit']) && $_POST['confirmationCAP'] == "") {
-    if (
-          $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-          $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "" &&
-          $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
-        ) {
-      // All required fields have been filled, so construct the message
-      $SendTo = "gbohn@sullivanplate.com, erauter@sullivanplate.com";
-      $Subject = "RMI From Sullivan Website";
-      $From = "From: RMI Form <rmiform@sullivanplate.com>\r\n";
-      $From .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
-      $From .= "Bcc: foresitegroupllc@gmail.com\r\n";
+<div class="two-col">
+  <div>
+    Please fill in the fields below so we can return to you more information about Sullivan Precision Plate. Required fields include *<br>
+    <br>
+
+    <form action="form-rmi.php" method="POST" id="rmi" class="form" novalidate>
+      <div>
+        <input type="text" name="username" tabindex="-1" aria-hidden="true" autocomplete="new-password">
+
+        <label>
+          Name *
+          <input type="text" name="<?php echo md5("name".$ip.$salt.$timestamp); ?>" required>
+        </label>
+
+        <label>
+          Company
+          <input type="text" name="<?php echo md5("company".$ip.$salt.$timestamp); ?>">
+        </label>
+
+        <label>
+        Address
+        <input type="text" name="<?php echo md5("address".$ip.$salt.$timestamp); ?>">
+      </label>
+
+      <label>
+        City
+        <input type="text" name="<?php echo md5("city".$ip.$salt.$timestamp); ?>">
+      </label>
       
-      $Message = "Name: " . $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-
-      if (!empty($_POST[md5('company' . $_POST['ip'] . $salt . $_POST['timestamp'])]))
-        $Message .= "Company: " . $_POST[md5('company' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-
-      if (!empty($_POST[md5('address' . $_POST['ip'] . $salt . $_POST['timestamp'])]))
-        $Message .= "Address: " . $_POST[md5('address' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-      if (!empty($_POST[md5('city' . $_POST['ip'] . $salt . $_POST['timestamp'])]))
-        $Message .= "City: " . $_POST[md5('city' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-      if (!empty($_POST[md5('state' . $_POST['ip'] . $salt . $_POST['timestamp'])]))
-        $Message .= "State: " . $_POST[md5('state' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-      if (!empty($_POST[md5('zip' . $_POST['ip'] . $salt . $_POST['timestamp'])]))
-        $Message .= "Zip: " . $_POST[md5('zip' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-
-      $Message .= "Phone: " . $_POST[md5('phone' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-      $Message .= "Email: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\n";
-
-      if (!empty($_POST['contact'])) $Message .= "\nBest to contact me via " . $_POST['contact'] . "\n";
-
-      $Message = stripslashes($Message);
-      
-      mail($SendTo, $Subject, $Message, $From);
-      
-      echo "<strong>Your message has been sent!</strong><br>\n<br>\nThank you for your interest in Sullivan Precision Plate.  You will be contacted shortly.";
-    } else {
-      echo "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
-    }
-  } else {
-  ?>
-  <script type="text/javascript">
-    function checkform (form) {
-      if (document.getElementById('name').value == "") { alert('Name required.'); document.getElementById('name').focus(); return false ; }
-      if (document.getElementById('phone').value == "") { alert('Phone required.'); document.getElementById('phone').focus(); return false ; }
-      if (document.getElementById('email').value == "") { alert('Email required.'); document.getElementById('email').focus(); return false ; }
-      return true ;
-    }
-  </script>
-  
-  Please fill in the fields below so we can return to you more information about Sullivan Precision Plate. Required fields include *<br>
-  <br>
-
-  <form action="rmi.php" method="POST" onSubmit="return checkform(this)" id="contact">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" name="<?php echo md5("name" . $ip . $salt . $timestamp); ?>" id="name" placeholder="NAME *"><br>
-      <br>
-
-      <label for="company">Company</label>
-      <input type="text" name="<?php echo md5("company" . $ip . $salt . $timestamp); ?>" id="company" placeholder="COMPANY"><br>
-      <br>
-
-      <label for="address">Address</label>
-      <input type="text" name="<?php echo md5("address" . $ip . $salt . $timestamp); ?>" id="address" placeholder="ADDRESS"><br>
-      <br>
-
-      <label for="city">City</label>
-      <input type="text" name="<?php echo md5("city" . $ip . $salt . $timestamp); ?>" id="city" placeholder="CITY"><br>
-      <br>
-      
-      <div class="half-left">
-        <label for="state">State</label>
-        <input type="text" name="<?php echo md5("state" . $ip . $salt . $timestamp); ?>" id="state" placeholder="STATE"><br>
-        <br>
-      </div>
-      
-      <div class="half-right">
-        <label for="zip">Zip</label>
-        <input type="text" name="<?php echo md5("zip" . $ip . $salt . $timestamp); ?>" id="zip" placeholder="ZIP"><br>
-        <br>
-      </div>
-
-      <div style="clear: both;"></div>
-
-      <label for="phone">Phone</label>
-      <input type="text" name="<?php echo md5("phone" . $ip . $salt . $timestamp); ?>" id="phone" placeholder="PHONE *"><br>
-      <br>
-
-      <label for="email">Email</label>
-      <input type="text" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="EMAIL *"><br>
-      <br>
-
-      <div class="radio">
-        <strong>Best to contact me via</strong><br>
-        <input type="radio" name="contact" value="Phone" id="phone-r"> <label for="phone-r">Phone</label>
-        <input type="radio" name="contact" value="Email" id="email-r"> <label for="email-r">Email</label>
-      </div>
-      <br>
-
-      <input type="text" name="confirmationCAP" style="display: none;"> <?php // Non-displaying field as a sort of invisible CAPTCHA. ?>
+      <div class="two-col">
+        <div>
+          <label>
+            State
+            <input type="text" name="<?php echo md5("state".$ip.$salt.$timestamp); ?>">
+          </label>
+        </div>
         
-      <input type="hidden" name="ip" value="<?php echo $ip; ?>">
-      <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
+        <div>
+          <label>
+            Zip
+            <input type="text" name="<?php echo md5("zip".$ip.$salt.$timestamp); ?>">
+          </label>
+        </div>
+      </div>
 
-      <button type="submit" name="submit">SUBMIT</button>
-    </div>
-  </form>
-  <?php } ?>
+        <label>
+          Phone *
+          <input type="tel" name="<?php echo md5("phone".$ip.$salt.$timestamp); ?>" required>
+        </label>
+
+        <label>
+          Email *
+          <input type="email" name="<?php echo md5("email".$ip.$salt.$timestamp); ?>" required>
+        </label>
+
+        <div class="radio">
+          <strong>Best to contact me via</strong><br>
+          <input type="radio" name="contact" value="Phone" id="phone-r">
+          <label for="phone-r">Phone</label>
+
+          <input type="radio" name="contact" value="Email" id="email-r">
+          <label for="email-r">Email</label>
+        </div>
+
+        <input type="hidden" name="ip" value="<?php echo $ip; ?>">
+        <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
+
+        <button type="submit" name="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div>
+    <strong>Sullivan Precision Plate</strong><br>
+    460 Cardinal Lane<br>
+    Hartland, Wisconsin 53029<br>
+    <br>
+
+    Phone 262-369-7200<br>
+    Fax 262-369-7219
+  </div>
 </div>
 
-<div class="half-right">
-  <strong>Sullivan Precision Plate</strong><br>
-  460 Cardinal Lane<br>
-  Hartland, Wisconsin 53029<br>
-  <br>
-
-  Phone 262-369-7200<br>
-  Fax 262-369-7219
+<div id="modal">
+  <div id="modal-box">
+    <div id="modal-button"></div>
+    <div id="modal-content"></div>
+  </div>
 </div>
 
-<div style="clear: both;"></div>
+<script>
+  // BEGIN form submit
+  const form = document.getElementById('rmi');
+  form.addEventListener('submit', submitForm);
+
+  function submitForm(event) {
+    event.preventDefault();
+
+    // Validate any fields with "required" selector
+    var valid = 'yes';
+
+    for (const el of form.querySelectorAll('[required]')) {
+      if (!el.checkValidity()) {
+        document.getElementsByName(el.name).forEach(function (input) {
+          input.classList.add('alert');
+          input.placeholder = 'REQUIRED';
+        });
+
+        valid = 'no';
+      }
+    }
+
+    // If fields are valid, send the data
+    if (valid == 'yes') {
+      document.getElementById("submit").classList.add("loader");
+
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data
+      })
+      .then((response) => response.text())
+      .then((result) => {
+        // Data sent, so display success message in modal
+        // and clear all the form fields
+        document.getElementById('modal-content').innerHTML = result;
+        modal.style.display = "block";
+        form.reset();
+        
+        // Clear alerts
+        document.querySelectorAll('.alert').forEach(function (alert) {
+          alert.classList.remove('alert');
+          alert.placeholder = '';
+        });
+
+        document.getElementById("submit").classList.remove("loader");
+      });
+    }
+  } // END rsubmitForm
+
+  const modal = document.getElementById("modal");
+  const modalbutton = document.getElementById("modal-button");
+
+  window.onclick = function(event) {
+    if (event.target == modal) modal.style.display = "none";
+  }
+
+  modalbutton.onclick = function() { modal.style.display = "none"; }
+</script>
 
 <?php include "footer.php"; ?>
