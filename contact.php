@@ -254,4 +254,31 @@ $salt = "ForesiteGroupSullivan";
   modalbutton.onclick = function() { modal.style.display = "none"; }
 </script>
 
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sullivan Precision Plate",
+    "url": "https://sullivanplate.com",
+    "image": "https://sullivanplate.com/images/home-banner1.webp",
+    "logo": "https://sullivanplate.com/images/logo.webp",
+    "description": "Drop us a line! Because our services are supported by our own professional staff we have the insight and sales engineering talent to handle any type and size of project regardless of complexity.",
+    "email": "sales@sullivanplate.com",
+    "telephone": ["+12623697200", "18009439511"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "460 Cardinal Lane",
+      "addressLocality": "Hartland",
+      "addressRegion": "WI",
+      "postalCode": "53029",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.0947044,
+      "longitude": -88.3514546
+    }
+  }
+</script>
+
 <?php $Map = "yes"; include "footer.php"; ?>
