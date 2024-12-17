@@ -92,7 +92,7 @@ if (
       if ($_FILES['file2']['size'] <= 1048576) {
         // File size is OK, so check if it's the correct type
         if (in_array(strtolower(pathinfo($_FILES['file2']['name'], PATHINFO_EXTENSION)), $allowed)) {
-          $mail->addAttachment($_FILES['file2']['name']);
+          $mail->addAttachment($_FILES['file2']['tmp_name'], $_FILES['file2']['name']);
         } else {
           // Invalid file type, so make a note that it didn't attach.
           $InvalidFile = "yes";
@@ -107,7 +107,7 @@ if (
       if ($_FILES['file3']['size'] <= 1048576) {
         // File size is OK, so check if it's the correct type
         if (in_array(strtolower(pathinfo($_FILES['file3']['name'], PATHINFO_EXTENSION)), $allowed)) {
-          $mail->addAttachment($_FILES['file3']['name']);
+          $mail->addAttachment($_FILES['file3']['tmp_name'], $_FILES['file3']['name']);
         } else {
           // Invalid file type, so make a note that it didn't attach.
           $InvalidFile = "yes";
